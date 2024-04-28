@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGame1.unity
     guid: 645a9b0990869994fbddf5e8fabafc3c
+  - enabled: 1
+    path: Assets/Scenes/NewProfileMenu.unity
+    guid: b166472a14f00ed4fbf669967c3998d3
+  - enabled: 1
+    path: Assets/Scenes/SelectProfileMenu.unity
+    guid: 9af1f83b653b40444bd4fb755d06517f
   m_configObjects: {}
