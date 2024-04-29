@@ -14,6 +14,16 @@ public class TrianglePuzzleVerify : MonoBehaviour
     public ItemSlot slotRed2;
     public ItemSlot slotRed3;
 
+    AudioSource audioSource;
+
+    public shake shake;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+
 
     public void VerifyPuzzle()
     {
@@ -27,13 +37,15 @@ public class TrianglePuzzleVerify : MonoBehaviour
         }
         else
         {
+            audioSource.Play();
+            shake.StartShake();
             Debug.Log("puzzle not solved");
         }
     }
 
     private bool VerifyTriangle()
     {
-        if(slotBlue1 == null || slotBlue2 == null || slotBlue3 == null || slotRed1 == null || slotRed2 == null || slotRed3 == null)
+        if(slotBlue1.slotValue == 0 || slotBlue2.slotValue == 0 || slotBlue3.slotValue == 0 || slotRed1.slotValue == 0 || slotRed2.slotValue == 0 || slotRed3.slotValue == 0)
         {
 
             return false;
