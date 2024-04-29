@@ -1,23 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    void Update()
-    {
+    private GameObject clickedObject;
 
+    public void ClickedObject(GameObject clickedObject)
+    {
+        this.clickedObject = clickedObject;
     }
 
-    public void CliqueEvento()
+    public void Finish()
     {
-        if (gameObject.tag == "Wrong")
+        if (clickedObject.tag == "Correct")
         {
-            Debug.Log("Wrong option");
+            Debug.Log("Correct");
+            SceneManager.LoadSceneAsync(1);
         }
         else
         {
-            Debug.Log("Right option");
+            Debug.Log("Incorrect");
         }
     }
 }
