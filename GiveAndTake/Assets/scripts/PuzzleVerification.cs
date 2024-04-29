@@ -6,12 +6,19 @@ using UnityEngine.SceneManagement;
 public class PuzzleVerification : MonoBehaviour
 {
     public ItemSlot topSlot; // Reference to the top slot of the pyramid
+    public shake shake;
+    public AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     // Recursive function to verify the pyramid structure
     private bool VerifyPyramidStructure(ItemSlot slot)
     {
         // Base case: if the slot is null, return true
-        if (slot == null)
+        if (slot.slotValue == 0)
         {
             return false;
         }
@@ -65,6 +72,13 @@ public class PuzzleVerification : MonoBehaviour
             Debug.Log("Puzzle solved!");
             SceneManager.LoadSceneAsync(1);
             // You can add more feedback here if needed
+        }
+        else
+        {
+            // Puzzle not solved
+            Debug.Log("Puzzle not solved!");
+            shake.StartShake();
+            audioSource.Play();
         }
     }
 }

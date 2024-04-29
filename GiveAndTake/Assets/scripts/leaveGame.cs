@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class leaveGame : MonoBehaviour
 {
     AudioSource audioSource;
 
@@ -12,9 +11,11 @@ public class MainMenu : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlayGame()
+    public void LeaveGame()
     {
         audioSource.Play();
-        SceneManager.LoadSceneAsync(1);
+        Application.Quit();
+
     }
+
 }
