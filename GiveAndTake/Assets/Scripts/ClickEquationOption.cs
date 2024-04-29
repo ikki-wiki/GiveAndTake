@@ -6,6 +6,8 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     private GameObject clickedObject;
+    public shake shake;
+    public AudioSource audioSource;
 
     public void ClickedObject(GameObject clickedObject)
     {
@@ -22,6 +24,8 @@ public class NewBehaviourScript : MonoBehaviour
         else
         {
             Debug.Log("Incorrect");
+            shake.StartShake();
+            audioSource.Play();
         }
     }
 }
