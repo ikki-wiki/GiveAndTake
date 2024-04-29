@@ -6,6 +6,12 @@ using UnityEngine.EventSystems;
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
     public List<ItemSlot> childSlots = new List<ItemSlot>();
+    AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -15,10 +21,13 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             slotValue = eventData.pointerDrag.GetComponent<DragDrop>().value;
             Debug.Log(slotValue);
+            audioSource.Play();
 
 
         }
     }
+
+
 
 
     public float detectionRadius = 10f;
