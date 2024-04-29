@@ -45,18 +45,22 @@ public class TrianglePuzzleVerify : MonoBehaviour
 
     private bool VerifyTriangle()
     {
+        float sideValue = slotRed1.slotValue + slotBlue1.slotValue + slotRed2.slotValue;
+        float sideValue2 = slotRed2.slotValue + slotBlue2.slotValue + slotRed3.slotValue;
+        float sideValue3 = slotRed3.slotValue + slotBlue3.slotValue + slotRed1.slotValue;
+
         if(slotBlue1.slotValue == 0 || slotBlue2.slotValue == 0 || slotBlue3.slotValue == 0 || slotRed1.slotValue == 0 || slotRed2.slotValue == 0 || slotRed3.slotValue == 0)
         {
-
             return false;
         }
 
-        if((slotBlue1.slotValue == slotBlue2.slotValue && slotBlue2.slotValue ==  slotBlue3.slotValue && slotBlue1.slotValue == slotBlue3.slotValue) && ( slotRed1.slotValue == slotRed2.slotValue && slotRed2.slotValue == slotRed3.slotValue && slotRed1.slotValue == slotRed3.slotValue) )
-        {
-            return true;
-        }
-        else
-        {
+        if(sideValue2 == sideValue){
+            if(sideValue3 == sideValue){
+                return true;
+            } else {
+                return false;
+            }
+        } else {
             return false;
         }
 
