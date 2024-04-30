@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,9 +106,127 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset 23_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 584
+        width: 356
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f796e3afb9397604792a978e83846b05
+      internalID: -1695928597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 23_9
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 584
+        width: 356
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bf9cb8bc1417d4dbf2448539116861
+      internalID: -2091016971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 23_16
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 165
+        width: 467
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205e2341dbd990845b56631515a9d884
+      internalID: -1199142745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 23_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 355
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954dc13a503e67b47b804edf78e9e2d1
+      internalID: 29259340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 23_36
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 37
+        width: 357
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6062b5658d43e47b07d5bd3a602d5f
+      internalID: 1987276002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +237,44 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset 23_0: -1695928597
+      Asset 23_1: -548535541
+      Asset 23_10: -877964568
+      Asset 23_11: 231741768
+      Asset 23_12: -32342489
+      Asset 23_13: 845627058
+      Asset 23_14: 974593339
+      Asset 23_15: 825198550
+      Asset 23_16: -1199142745
+      Asset 23_17: -299505669
+      Asset 23_18: -424639101
+      Asset 23_19: -1978368461
+      Asset 23_2: 401696949
+      Asset 23_20: -1681298886
+      Asset 23_21: -1786226191
+      Asset 23_22: -1018373011
+      Asset 23_23: -1606406439
+      Asset 23_24: -1821833148
+      Asset 23_25: 2088482149
+      Asset 23_26: 31972085
+      Asset 23_27: 917462641
+      Asset 23_28: 672285368
+      Asset 23_29: -1331663241
+      Asset 23_3: 1147437990
+      Asset 23_30: 912074300
+      Asset 23_31: 29259340
+      Asset 23_32: 1927489172
+      Asset 23_33: 1618061713
+      Asset 23_34: 1485283807
+      Asset 23_35: -677171268
+      Asset 23_36: 1987276002
+      Asset 23_4: -63070561
+      Asset 23_5: 514664558
+      Asset 23_6: -1616000699
+      Asset 23_7: 2031393458
+      Asset 23_8: -1230393961
+      Asset 23_9: -2091016971
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
