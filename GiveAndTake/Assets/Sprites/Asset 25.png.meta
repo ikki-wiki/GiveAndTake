@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,9 +106,127 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset 25_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 514
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17c830828734c743b40a080635102ac
+      internalID: 192099543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 25_21
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 639
+        width: 516
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e665039a47cad04bb8a5048134f15c0
+      internalID: -782470028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 25_38
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 190
+        width: 637
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af80c32170c892418d3fc34506568c9
+      internalID: -781398474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 25_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 512
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11862e384c49fe41b7e884a4f3498e4
+      internalID: -1674472158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 25_66
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 21
+        width: 503
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87c69d05b21d4c4d8e5ca94478c6047
+      internalID: 748455372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +237,74 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset 25_0: 75785198
+      Asset 25_1: -2118039535
+      Asset 25_10: 192099543
+      Asset 25_11: -1221344443
+      Asset 25_12: 784773914
+      Asset 25_13: -300345090
+      Asset 25_14: -4579864
+      Asset 25_15: -650766824
+      Asset 25_16: 1100042620
+      Asset 25_17: -1354749095
+      Asset 25_18: 406586575
+      Asset 25_19: 841059156
+      Asset 25_2: 716287404
+      Asset 25_20: 1231789067
+      Asset 25_21: -782470028
+      Asset 25_22: -2039334023
+      Asset 25_23: -223899696
+      Asset 25_24: 1425904967
+      Asset 25_25: -1139857424
+      Asset 25_26: 1327707335
+      Asset 25_27: -1788789856
+      Asset 25_28: 139145192
+      Asset 25_29: 1005426717
+      Asset 25_3: -1690513274
+      Asset 25_30: 293673483
+      Asset 25_31: 95901831
+      Asset 25_32: 169414667
+      Asset 25_33: -712608163
+      Asset 25_34: 1065450465
+      Asset 25_35: -1999504044
+      Asset 25_36: 409211080
+      Asset 25_37: 1088849432
+      Asset 25_38: -781398474
+      Asset 25_39: -70759347
+      Asset 25_4: -1991356093
+      Asset 25_40: 284359314
+      Asset 25_41: -1763343685
+      Asset 25_42: -1235143235
+      Asset 25_43: -1943783216
+      Asset 25_44: 1126145227
+      Asset 25_45: 423107127
+      Asset 25_46: -138635814
+      Asset 25_47: 1422775637
+      Asset 25_48: 2124131752
+      Asset 25_49: -201449209
+      Asset 25_5: -1682891878
+      Asset 25_50: -153025987
+      Asset 25_51: -1637369118
+      Asset 25_52: 2035527573
+      Asset 25_53: -466407407
+      Asset 25_54: -1807417254
+      Asset 25_55: -1674472158
+      Asset 25_56: 447689441
+      Asset 25_57: -291089743
+      Asset 25_58: -1035835505
+      Asset 25_59: -1056176591
+      Asset 25_6: 922387643
+      Asset 25_60: -1531004292
+      Asset 25_61: -1375091009
+      Asset 25_62: -74170151
+      Asset 25_63: 388220498
+      Asset 25_64: -2019005894
+      Asset 25_65: 1442665198
+      Asset 25_66: 748455372
+      Asset 25_7: 1193008948
+      Asset 25_8: -1815728351
+      Asset 25_9: 761427822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
