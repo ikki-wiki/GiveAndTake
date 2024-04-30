@@ -70,7 +70,7 @@ public class PuzzleVerification : MonoBehaviour
         {
             // Puzzle solved
             Debug.Log("Puzzle solved!");
-            SceneManager.LoadSceneAsync(1);
+            SceneManager.LoadSceneAsync(7);
             // You can add more feedback here if needed
         }
         else

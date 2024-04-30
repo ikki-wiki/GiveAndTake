@@ -80,6 +80,6 @@ public class ProfileList : MonoBehaviour
     {
         ProfileManager.instance.RemoveProfile(profile);
         Debug.Log("Deleted profile: " + profile.username);
-        UpdateProfileListUI(); // Update the profile list UI after deleting the profile
+        UpdateProfileListUI();
     }
 }

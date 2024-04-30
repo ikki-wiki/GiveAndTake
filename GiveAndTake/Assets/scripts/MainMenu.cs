@@ -15,6 +15,6 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         audioSource.Play();
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(4);
     }
 }

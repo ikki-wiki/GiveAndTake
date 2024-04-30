@@ -9,6 +9,7 @@ public class NewBehaviourScript : MonoBehaviour
     public shake shake;
     public AudioSource audioSource;
     public GameObject underline;
+    public int loadSceneNumber;
 
     public void ClickedObject(GameObject clickedObject)
     {
@@ -22,7 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (clickedObject.tag == "Correct")
         {
             Debug.Log("Correct");
-            SceneManager.LoadSceneAsync(1);
+            SceneManager.LoadSceneAsync(loadSceneNumber);
         }
         else
         {
