@@ -32,7 +32,7 @@ public class TrianglePuzzleVerify : MonoBehaviour
         {
             // Puzzle solved
             Debug.Log("Puzzle solved!");
-            SceneManager.LoadSceneAsync(1);
+            SceneManager.LoadSceneAsync(8);
             // You can add more feedback here if needed
         }
         else
