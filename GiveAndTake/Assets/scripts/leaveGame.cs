@@ -14,7 +14,12 @@ public class leaveGame : MonoBehaviour
     public void LeaveGame()
     {
         audioSource.Play();
-        Application.Quit();
+        
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
 
     }
 
