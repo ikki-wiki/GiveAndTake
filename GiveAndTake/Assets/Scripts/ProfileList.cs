@@ -10,6 +10,12 @@ public class ProfileList : MonoBehaviour
     private List<PlayerProfile> profiles;
     private List<GameObject> profileObjects = new List<GameObject>(); // List to store instantiated profile UI objects
     public TMP_Text noProfilesText;
+    public GameObject selectProfileCanvas;
+    public GameObject confirmDeleteProfileCanvas;
+    public Text playerUsernameToRemove;
+    public Button confirmRemovePlayerButton;
+    
+    
 
     void Start()
     {
@@ -48,7 +54,7 @@ public class ProfileList : MonoBehaviour
             Image removeButtonImage = profileObject.transform.Find("Remove").GetComponent<Image>();
             removeButton.enabled = true;
             removeButtonImage.enabled = true;
-            removeButton.onClick.AddListener(() => DeleteProfile(profile));
+            removeButton.onClick.AddListener(() => ShowConfirmDeleteProfileCanvas(profile));
 
             profileObject.transform.position = new Vector3(profileObject.transform.position.x, yPosition, 0);
             yPosition -= 80f;
@@ -76,10 +82,20 @@ public class ProfileList : MonoBehaviour
         Debug.Log("Selected profile: " + SelectedProfile.SelectedProfileInstance.username);
     }
 
+    void ShowConfirmDeleteProfileCanvas(PlayerProfile profile)
+    {
+        playerUsernameToRemove.text = profile.username;
+        selectProfileCanvas.SetActive(false);
+        confirmDeleteProfileCanvas.SetActive(true);
+        confirmRemovePlayerButton.onClick.AddListener(() => DeleteProfile(profile));
+    }
+
     void DeleteProfile(PlayerProfile profile)
     {
         ProfileManager.instance.RemoveProfile(profile);
         Debug.Log("Deleted profile: " + profile.username);
+        selectProfileCanvas.SetActive(true);
+        confirmDeleteProfileCanvas.SetActive(false);
         UpdateProfileListUI();
     }
 }
