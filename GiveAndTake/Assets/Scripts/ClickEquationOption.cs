@@ -5,24 +5,16 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private GameObject clickedObject;
     public shake shake;
     public AudioSource audioSource;
-    public GameObject underline;
     public int loadSceneNumber;
 
-    public void ClickedObject(GameObject clickedObject)
-    {
-        this.clickedObject = clickedObject;
-        underline.SetActive(true);
-        underline.transform.position = new Vector3(clickedObject.transform.position.x, clickedObject.transform.position.y - 60, clickedObject.transform.position.z);      
-    }
-
-    public void Finish()
+    public void Finish(GameObject clickedObject)
     {
         if (clickedObject.tag == "Correct")
         {
             Debug.Log("Correct");
+            //corrigir depois quando já se tiver o tal display de sucesso/erro
             SceneManager.LoadSceneAsync(loadSceneNumber);
         }
         else
@@ -30,7 +22,6 @@ public class NewBehaviourScript : MonoBehaviour
             Debug.Log("Incorrect");
             shake.StartShake();
             audioSource.Play();
-            underline.SetActive(false);
         }
     }
 }
