@@ -22,6 +22,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             slotValue = eventData.pointerDrag.GetComponent<DragDrop>().value;
             Debug.Log(slotValue);
             audioSource.Play();
+            eventData.pointerDrag.GetComponent<DragDrop>().transform.parent = gameObject.transform;
 
 
         }
