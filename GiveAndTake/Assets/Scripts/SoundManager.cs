@@ -3,45 +3,48 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    public GameObject targetObject; // Reference to the GameObject containing the AudioListener
-    public Toggle soundToggle; // Reference to the Toggle UI element
+    public GameObject targetObject; // Reference to the GameObject with AudioListener component
+    public Toggle soundToggle; // Reference to the sound toggle UI element
 
     void Start()
     {
-        if (targetObject == null)
-        {
-            Debug.LogError("Target GameObject is not assigned!");
-            return;
-        }
+        // Initialize toggle state based on sound setting
+        InitializeUI();
 
-        // Initialize the toggle state based on the current sound state
-        AudioListener audioListener = targetObject.GetComponent<AudioListener>();
-        if (audioListener != null)
-        {
-            soundToggle.isOn = audioListener.enabled;
-        }
-        else
-        {
-            Debug.LogError("Target GameObject does not have an AudioListener component!");
-        }
-
-        // Add listener to toggle's value change event
-        soundToggle.onValueChanged.AddListener(OnSoundToggleChanged);
+        // Add listener to toggle value change event
+        soundToggle.onValueChanged.AddListener(OnToggleValueChanged);
     }
 
     // Method called when the toggle value changes
-    void OnSoundToggleChanged(bool isSoundEnabled)
+    void OnToggleValueChanged(bool isSoundEnabled)
     {
-        Debug.Log("Sound enabled: " + isSoundEnabled);
-        // Enable or disable the audio listener based on the toggle value
-        AudioListener audioListener = targetObject.GetComponent<AudioListener>();
-        if (audioListener != null)
+        // Update sound setting based on toggle state
+        SetSoundEnabled(isSoundEnabled);
+    }
+
+    public void SetSoundEnabled(bool isEnabled)
+    {
+        PlayerPrefs.SetInt("SoundEnabled", isEnabled ? 1 : 0);
+        PlayerPrefs.Save();
+
+        if (targetObject != null)
         {
-            audioListener.enabled = isSoundEnabled;
+            AudioListener audioListener = targetObject.GetComponent<AudioListener>();
+            if (audioListener != null)
+            {
+                audioListener.enabled = isEnabled;
+            }
         }
-        else
-        {
-            Debug.LogError("Target GameObject does not have an AudioListener component!");
-        }
+    }
+
+    public bool GetSoundEnabled()
+    {
+        return PlayerPrefs.GetInt("SoundEnabled", 1) == 1;
+    }
+
+    public void InitializeUI()
+    {
+        soundToggle.isOn = GetSoundEnabled();
+        targetObject.GetComponent<AudioListener>().enabled = soundToggle.isOn;
     }
 }

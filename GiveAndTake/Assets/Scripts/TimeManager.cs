@@ -1,50 +1,39 @@
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using UnityEngine.SceneManagement;
 using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class SettingsManager : MonoBehaviour
+public class TimeManager : MonoBehaviour
 {
-    public Toggle soundToggle; 
-    public Toggle timeToggle; 
+    public Toggle timeToggle;
     public TMP_InputField timeInputField; 
     public Text timeText; 
     public GameObject displayTime; 
-    public SoundManager soundManager; // Reference to the SoundManager script
-    public TimeManager timeManager; // Reference to the TimeManager script
-    public string sceneToLoad;
-
     private Coroutine timerCoroutine;
+    public string sceneToLoad;
+    public float defaultTime = 180f;
 
-    void Start()
+    public void Start()
     {
         // Initialize UI elements and values based on PlayerPrefs
         InitializeUI();
 
-        // Add listeners to toggle value change events
-        //soundToggle.onValueChanged.AddListener(OnSoundToggleChanged);
-        //timeToggle.onValueChanged.AddListener(OnTimeToggleChanged);
-
         // Add listener to time input field value change event
-        //timeInputField.onValueChanged.AddListener(OnTimeInputValueChanged);
+        timeInputField.onValueChanged.AddListener(OnTimeInputValueChanged);
+
+        // Add listener to time toggle value change event
+        timeToggle.onValueChanged.AddListener(SetTimeEnabled);
     }
-
-    // Method called when the sound toggle value changes
-    void OnSoundToggleChanged(bool isSoundEnabled)
+    public void SetTimeEnabled(bool isEnabled)
     {
-        soundManager.SetSoundEnabled(isSoundEnabled);
-    }
+        PlayerPrefs.SetInt("TimeEnabled", isEnabled ? 1 : 0);
+        PlayerPrefs.Save();
 
-    // Method called when the time toggle value changes
-    void OnTimeToggleChanged(bool isTimeEnabled)
-    {
-        timeManager.SetTimeEnabled(isTimeEnabled);
+        displayTime.SetActive(isEnabled);
+        timeInputField.text = GetTimeDuration(defaultTime).ToString();
 
-        timeInputField.gameObject.SetActive(isTimeEnabled);
-        displayTime.SetActive(isTimeEnabled);
-
-        if (isTimeEnabled)
+        if (isEnabled)
         {
             StartTimer();
         }
@@ -59,7 +48,7 @@ public class SettingsManager : MonoBehaviour
     {
         if (timerCoroutine == null)
         {
-            float duration = timeManager.GetTimeDuration(timeManager.defaultTime);
+            float duration = PlayerPrefs.GetFloat("TimeDuration", defaultTime);
             timerCoroutine = StartCoroutine(CountdownTimer(duration));
         }
         else
@@ -96,22 +85,8 @@ public class SettingsManager : MonoBehaviour
             timer -= 1f;
         }
 
-        // Timer has reached zero, do something (e.g., end game, trigger event, etc.)
-        Debug.Log("Timer has reached zero!");
+        // Timer has reached zero
         SceneManager.LoadScene(sceneToLoad);
-    }
-
-    // Method to initialize UI elements and values based on PlayerPrefs
-    void InitializeUI()
-    {
-        /*timeToggle.isOn = timeManager.GetTimeEnabled();
-        timeInputField.gameObject.SetActive(timeToggle.isOn);
-        displayTime.SetActive(timeToggle.isOn);
-
-        if (timeToggle.isOn)
-        {
-            StartTimer();
-        }*/
     }
 
     // Method called when the value of the time input field changes
@@ -120,11 +95,42 @@ public class SettingsManager : MonoBehaviour
         float timeValue;
         if (float.TryParse(value, out timeValue))
         {
-            timeManager.SetTimeDuration(timeValue);
+            SetTimeDuration(timeValue);
+            timeInputField.text = timeValue.ToString();
         }
         else
         {
             Debug.LogWarning("Invalid input for time value.");
         }
     }
+
+    public void InitializeUI()
+    {
+        timeToggle.isOn = GetTimeEnabled();
+        timeInputField.gameObject.SetActive(true);
+        timeInputField.text = GetTimeDuration(defaultTime).ToString();
+        displayTime.SetActive(timeToggle.isOn);
+
+        if (timeToggle.isOn)
+        {
+            StartTimer();
+        } 
+    }
+
+    public bool GetTimeEnabled()
+    {
+        return PlayerPrefs.GetInt("TimeEnabled", 0) == 1;
+    }
+
+    public void SetTimeDuration(float duration)
+    {
+        PlayerPrefs.SetFloat("TimeDuration", duration);
+        PlayerPrefs.Save();
+    }
+
+    public float GetTimeDuration(float defaultDuration)
+    {
+        return PlayerPrefs.GetFloat("TimeDuration", defaultDuration);
+    }
 }
+
