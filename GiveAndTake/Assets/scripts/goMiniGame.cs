@@ -23,5 +23,10 @@ public class goMiniGame : MonoBehaviour
         audioSource.Play();
         SceneManager.LoadSceneAsync(9);
     }
+    public void PlayCompetitiveIntro()
+    {
+        audioSource.Play();
+        SceneManager.LoadSceneAsync(10);
+    }
 
 }
