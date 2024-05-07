@@ -13,6 +13,14 @@ public class TimeManager : MonoBehaviour
     private Coroutine timerCoroutine;
     public string sceneToLoad;
     public float defaultTime = 180f;
+    private float timer;
+    public float RemainingTime
+    {
+        get
+        {
+            return timer;
+        }
+    }
 
     public void Start()
     {
@@ -70,7 +78,7 @@ public class TimeManager : MonoBehaviour
     // Coroutine to count down the timer
     IEnumerator CountdownTimer(float duration)
     {
-        float timer = duration;
+        timer = duration;
 
         while (timer > 0)
         {

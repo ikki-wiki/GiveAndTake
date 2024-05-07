@@ -10,26 +10,31 @@ public class ScoreManager : MonoBehaviour
     public TMP_InputField scoreInputField;
     public Text scoreText; 
     public GameObject displayScore; 
-    private float defaultScore = 0f;
-    private float scoreIncrement = 100f; // Default score increment amount
+    private float maxScore = 1000f;
     private float score = 0f; // Current score value
-    public string sceneToLoad;
+
+    // Reference to the TimeManager script
+    public TimeManager timeManager;
 
     public void Start()
     {
         // Initialize UI elements and values based on PlayerPrefs
         InitializeUI();
 
+        score = maxScore;
+
         // Add listener to score toggle value change event
         scoreToggle.onValueChanged.AddListener(SetScoreEnabled);
 
         // Add listener to score input field value change event
-        scoreInputField.onValueChanged.AddListener(OnScoreIncrementChanged);
+        scoreInputField.onValueChanged.AddListener(OnBaseScoreChanged);
     }
 
     void Update()
     {
-        IncrementScore();
+        // Increment the score based on the remaining time
+        DecreaseScore();
+
         // Update the score text based on the current score value
         UpdateScoreText();
     }
@@ -45,7 +50,7 @@ public class ScoreManager : MonoBehaviour
     public void InitializeUI()
     {
         // Set the score input field text to the default increment amount
-        scoreInputField.text = scoreIncrement.ToString();
+        scoreInputField.text = maxScore.ToString();
 
         // Check the value of the score toggle from PlayerPrefs
         bool isScoreEnabled = PlayerPrefs.GetInt("ScoreEnabled", 1) == 1;
@@ -56,14 +61,14 @@ public class ScoreManager : MonoBehaviour
     }
 
     // Method to handle the score increment value change event
-    public void OnScoreIncrementChanged(string value)
+    public void OnBaseScoreChanged(string value)
     {
-        float increment;
-        if (float.TryParse(value, out increment))
+        float currentBaseScore;
+        if (float.TryParse(value, out currentBaseScore))
         {
             // Update the score increment amount
-            scoreIncrement = increment;
-            scoreInputField.text = scoreIncrement.ToString();
+            maxScore = currentBaseScore;
+            scoreInputField.text = maxScore.ToString();
         }
         else
         {
@@ -72,25 +77,26 @@ public class ScoreManager : MonoBehaviour
     }
 
     // Method to increment the score
-    public void IncrementScore()
+    public void DecreaseScore()
     {
-        VerifyWinCondition();
+        // Get the remaining time from the TimeManager script
+        float remainingTime = timeManager.RemainingTime;
 
-        if(Input.GetKeyDown(KeyCode.Space))
-            score += scoreIncrement;
+        // Calculate the score decrease rate based on the remaining time
+        float decreaseRate = maxScore / timeManager.GetTimeDuration(timeManager.defaultTime);
+
+        // Decrease the score proportionally to the remaining time
+        score = maxScore - (decreaseRate * (timeManager.GetTimeDuration(timeManager.defaultTime) - remainingTime));
     }
 
     // Method to update the score text
     private void UpdateScoreText()
     {
-        scoreText.text = score.ToString();
+        // Round the score to the nearest integer
+        int roundedScore = Mathf.RoundToInt(score);
+
+        // Update the score text with the rounded score
+        scoreText.text = roundedScore.ToString();
     }
 
-    public void VerifyWinCondition()
-    {
-        if(score >= 3000)
-        {
-            SceneManager.LoadScene(sceneToLoad);
-        }
-    }
 }
