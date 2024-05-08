@@ -24,6 +24,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.6f;
         audioSource.Play();
+        gameObject.transform.SetParent(canvas.transform);
     }
 
     public void OnDrag(PointerEventData eventData)

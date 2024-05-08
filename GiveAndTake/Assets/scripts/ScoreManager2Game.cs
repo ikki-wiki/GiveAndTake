@@ -13,23 +13,44 @@ public class ScoreManager2Game : MonoBehaviour
     int time = 120;
     public Text Timer1;
     public Text Timer2;
-    public List<Cartao> cardsPlayer1;
-    public List<Cartao> cardsPlayer2;
+    public List<Cartao> cardsPlayer1Direita;
+    public List<Cartao> cardsPlayer1Esquerda;
+    public List<Cartao> cardsPlayer2Direita;
+    public List<Cartao> cardsPlayer2Esquerda;
 
     private void Start()
     {
-        // Chama o método UpdateTimer a cada segundo, após 1 segundo de delay.
+        showCards1Direita();
+
+        showCards1Esquerda();
+
+        showCards2Direita();
+
+        showCards2Esquerda();
+
         InvokeRepeating("UpdateTimer", 1f, 1f);
-        InvokeRepeating("showCards1", 0f, 10f);
-        InvokeRepeating("showCards2", 0f, 10f);
     }
 
-    private void showCards1()
+    public void showCards1Direita()
     {
-        int randomIndex = Random.Range(0, cardsPlayer1.Count);
+        int randomIndex = Random.Range(0, cardsPlayer1Direita.Count);
 
         // Acessa o objeto na lista usando o índice aleatório.
-        Cartao objectToToggle = cardsPlayer1[randomIndex];
+        Cartao objectToToggle = cardsPlayer1Direita[randomIndex];
+
+        // Ativa ou desativa o objeto selecionado.
+        objectToToggle.gameObject.SetActive(!objectToToggle.gameObject.activeSelf);
+        objectToToggle.itemSlot.gameObject.SetActive(!objectToToggle.itemSlot.gameObject.activeSelf);
+        objectToToggle.itemSlot2.gameObject.SetActive(!objectToToggle.itemSlot2.gameObject.activeSelf);
+        if (objectToToggle.itemSlot3 != null) objectToToggle.itemSlot3.gameObject.SetActive(!objectToToggle.itemSlot3.gameObject.activeSelf);
+
+    }
+    public void showCards1Esquerda()
+    {
+        int randomIndex = Random.Range(0, cardsPlayer1Esquerda.Count);
+
+        // Acessa o objeto na lista usando o índice aleatório.
+        Cartao objectToToggle = cardsPlayer1Esquerda[randomIndex];
 
         // Ativa ou desativa o objeto selecionado.
         objectToToggle.gameObject.SetActive(!objectToToggle.gameObject.activeSelf);
@@ -39,18 +60,33 @@ public class ScoreManager2Game : MonoBehaviour
 
     }
 
-    private void showCards2()
+    public void showCards2Direita()
     {
-        int randomIndex = Random.Range(0, cardsPlayer2.Count);
+        int randomIndex = Random.Range(0, cardsPlayer2Direita.Count);
 
         // Acessa o objeto na lista usando o índice aleatório.
-        Cartao objectToToggle = cardsPlayer2[randomIndex];
+        Cartao objectToToggle = cardsPlayer2Direita[randomIndex];
 
         // Ativa ou desativa o objeto selecionado.
         objectToToggle.gameObject.SetActive(!objectToToggle.gameObject.activeSelf);
         objectToToggle.itemSlot.gameObject.SetActive(!objectToToggle.itemSlot.gameObject.activeSelf);
         objectToToggle.itemSlot2.gameObject.SetActive(!objectToToggle.itemSlot2.gameObject.activeSelf);
         if (objectToToggle.itemSlot3 != null) objectToToggle.itemSlot3.gameObject.SetActive(!objectToToggle.itemSlot3.gameObject.activeSelf);
+    }
+
+    public void showCards2Esquerda()
+    {
+        int randomIndex = Random.Range(0, cardsPlayer2Esquerda.Count);
+
+        // Acessa o objeto na lista usando o índice aleatório.
+        Cartao objectToToggle = cardsPlayer2Esquerda[randomIndex];
+
+        // Ativa ou desativa o objeto selecionado.
+        objectToToggle.gameObject.SetActive(!objectToToggle.gameObject.activeSelf);
+        objectToToggle.itemSlot.gameObject.SetActive(!objectToToggle.itemSlot.gameObject.activeSelf);
+        objectToToggle.itemSlot2.gameObject.SetActive(!objectToToggle.itemSlot2.gameObject.activeSelf);
+        if (objectToToggle.itemSlot3 != null) objectToToggle.itemSlot3.gameObject.SetActive(!objectToToggle.itemSlot3.gameObject.activeSelf);
+
     }
 
     private void UpdateTimer()
