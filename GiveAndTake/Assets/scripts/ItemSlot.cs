@@ -23,6 +23,8 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             Debug.Log(slotValue);
             audioSource.Play();
             eventData.pointerDrag.GetComponent<DragDrop>().transform.parent = gameObject.transform;
+            //quero resetar o rect do objeto
+            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 0, 0);
 
 
         }
