@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class TrianglePuzzleVerify : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class TrianglePuzzleVerify : MonoBehaviour
     AudioSource audioSource;
 
     public shake shake;
+    public ScoreManager scoreManager;
 
     private void Awake()
     {
@@ -56,6 +58,7 @@ public class TrianglePuzzleVerify : MonoBehaviour
 
         if(sideValue2 == sideValue){
             if(sideValue3 == sideValue){
+                PlayerProfile.currentProfile.score += scoreManager.GetScore();
                 return true;
             } else {
                 return false;

@@ -8,6 +8,7 @@ public class NewBehaviourScript : MonoBehaviour
     public shake shake;
     public AudioSource audioSource;
     public int loadSceneNumber;
+    public ScoreManager scoreManager;
 
     public void Finish(GameObject clickedObject)
     {
@@ -15,6 +16,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             Debug.Log("Correct");
             //corrigir depois quando já se tiver o tal display de sucesso/erro
+            PlayerProfile.currentProfile.score += scoreManager.GetScore();
             SceneManager.LoadSceneAsync(loadSceneNumber);
         }
         else

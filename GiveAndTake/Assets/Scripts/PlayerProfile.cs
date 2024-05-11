@@ -2,11 +2,18 @@
 public class PlayerProfile
 {
     public string username;
-    public int score;
+    public float score;
 
-    public PlayerProfile(string username, int score)
+    public static PlayerProfile currentProfile;
+
+    public PlayerProfile(string username, float score)
     {
         this.username = username;
+        this.score = score;
+    }
+
+    public PlayerProfile(float score)
+    {
         this.score = score;
     }
 }

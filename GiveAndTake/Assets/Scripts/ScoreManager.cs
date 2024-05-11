@@ -99,4 +99,9 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = roundedScore.ToString();
     }
 
+    public float GetScore()
+    {
+        return score;
+    }
+
 }

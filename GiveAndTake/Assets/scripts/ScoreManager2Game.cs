@@ -18,7 +18,7 @@ public class ScoreManager2Game : MonoBehaviour
 
     private void Start()
     {
-        // Chama o método UpdateTimer a cada segundo, após 1 segundo de delay.
+        // Chama o mï¿½todo UpdateTimer a cada segundo, apï¿½s 1 segundo de delay.
         InvokeRepeating("UpdateTimer", 1f, 1f);
         InvokeRepeating("showCards1", 0f, 10f);
         InvokeRepeating("showCards2", 0f, 10f);
@@ -28,7 +28,7 @@ public class ScoreManager2Game : MonoBehaviour
     {
         int randomIndex = Random.Range(0, cardsPlayer1.Count);
 
-        // Acessa o objeto na lista usando o índice aleatório.
+        // Acessa o objeto na lista usando o ï¿½ndice aleatï¿½rio.
         Cartao objectToToggle = cardsPlayer1[randomIndex];
 
         // Ativa ou desativa o objeto selecionado.
@@ -43,7 +43,7 @@ public class ScoreManager2Game : MonoBehaviour
     {
         int randomIndex = Random.Range(0, cardsPlayer2.Count);
 
-        // Acessa o objeto na lista usando o índice aleatório.
+        // Acessa o objeto na lista usando o ï¿½ndice aleatï¿½rio.
         Cartao objectToToggle = cardsPlayer2[randomIndex];
 
         // Ativa ou desativa o objeto selecionado.
@@ -58,11 +58,16 @@ public class ScoreManager2Game : MonoBehaviour
         // Decrementa o tempo restante.
         time--;
 
-        // Atualiza os textos dos temporizadores.
-        Timer1.text = time.ToString() + " segundos";
-        Timer2.text = time.ToString() + " segundos";
+        int minutes = Mathf.FloorToInt(time / 60);
+        int seconds = Mathf.FloorToInt(time % 60);
+        
+        // Atualiza os textos dos temporizadores.             
+        Timer1.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        Timer2.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        //Timer1.text = time.ToString() + " segundos";
+        //Timer2.text = time.ToString() + " segundos";
 
-        // Se o tempo acabou, você pode adicionar aqui a lógica para terminar o jogo.
+        // Se o tempo acabou, vocï¿½ pode adicionar aqui a lï¿½gica para terminar o jogo.
         if (time <= 0)
         {
             // Por exemplo:

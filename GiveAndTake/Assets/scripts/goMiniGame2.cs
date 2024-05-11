@@ -15,6 +15,7 @@ public class goMiniGame2 : MonoBehaviour
     public void PlayGame2()
     {
         audioSource.Play();
+        PlayerProfile.currentProfile.score = 0;
         SceneManager.LoadSceneAsync(6);
     }
 }

@@ -8,6 +8,7 @@ public class PuzzleVerification : MonoBehaviour
     public ItemSlot topSlot; // Reference to the top slot of the pyramid
     public shake shake;
     public AudioSource audioSource;
+    public ScoreManager scoreManager;
 
     private void Awake()
     {
@@ -70,6 +71,7 @@ public class PuzzleVerification : MonoBehaviour
         {
             // Puzzle solved
             Debug.Log("Puzzle solved!");
+            PlayerProfile.currentProfile.score += scoreManager.GetScore();
             SceneManager.LoadSceneAsync(7);
             // You can add more feedback here if needed
         }

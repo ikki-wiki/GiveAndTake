@@ -9924,6 +9924,7 @@ MonoBehaviour:
   slotRed2: {fileID: 199396905}
   slotRed3: {fileID: 426895115}
   shake: {fileID: 2134852526}
+  scoreManager: {fileID: 1597493959}
 --- !u!4 &1249068670
 Transform:
   m_ObjectHideFlags: 0
