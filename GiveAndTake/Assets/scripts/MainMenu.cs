@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        PlayerProfile.currentProfile = new PlayerProfile(0);
     }
 
     public void PlayGame()

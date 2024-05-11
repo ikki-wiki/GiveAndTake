@@ -2159,7 +2159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shake: {fileID: 346204989}
   audioSource: {fileID: 536533889}
-  loadSceneNumber: 1
+  loadSceneNumber: 11
+  scoreManager: {fileID: 2070239465}
 --- !u!82 &536533889
 AudioSource:
   m_ObjectHideFlags: 0

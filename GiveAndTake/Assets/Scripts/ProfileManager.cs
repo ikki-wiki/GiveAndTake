@@ -59,7 +59,7 @@ public class ProfileManager : MonoBehaviour
         for (int i = 0; i < profiles.Count; i++)
         {
             PlayerPrefs.SetString("Profile_" + i + "_Name", profiles[i].username);
-            PlayerPrefs.SetInt("Profile_" + i + "_Score", profiles[i].score);
+            PlayerPrefs.SetFloat("Profile_" + i + "_Score", profiles[i].score);
         }
         PlayerPrefs.Save();
     }

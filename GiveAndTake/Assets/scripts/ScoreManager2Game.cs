@@ -35,7 +35,7 @@ public class ScoreManager2Game : MonoBehaviour
     {
         int randomIndex = Random.Range(0, cardsPlayer1Direita.Count);
 
-        // Acessa o objeto na lista usando o índice aleatório.
+        // Acessa o objeto na lista usando o Ã­ndice aleatÃ³rio.
         Cartao objectToToggle = cardsPlayer1Direita[randomIndex];
 
         // Ativa ou desativa o objeto selecionado.
@@ -49,7 +49,7 @@ public class ScoreManager2Game : MonoBehaviour
     {
         int randomIndex = Random.Range(0, cardsPlayer1Esquerda.Count);
 
-        // Acessa o objeto na lista usando o índice aleatório.
+        // Acessa o objeto na lista usando o Ã­ndice aleatÃ³rio.
         Cartao objectToToggle = cardsPlayer1Esquerda[randomIndex];
 
         // Ativa ou desativa o objeto selecionado.
@@ -64,7 +64,7 @@ public class ScoreManager2Game : MonoBehaviour
     {
         int randomIndex = Random.Range(0, cardsPlayer2Direita.Count);
 
-        // Acessa o objeto na lista usando o índice aleatório.
+        // Acessa o objeto na lista usando o Ã­ndice aleatÃ³rio.
         Cartao objectToToggle = cardsPlayer2Direita[randomIndex];
 
         // Ativa ou desativa o objeto selecionado.
@@ -78,7 +78,7 @@ public class ScoreManager2Game : MonoBehaviour
     {
         int randomIndex = Random.Range(0, cardsPlayer2Esquerda.Count);
 
-        // Acessa o objeto na lista usando o índice aleatório.
+        // Acessa o objeto na lista usando o Ã­ndice aleatÃ³rio.
         Cartao objectToToggle = cardsPlayer2Esquerda[randomIndex];
 
         // Ativa ou desativa o objeto selecionado.
@@ -94,11 +94,16 @@ public class ScoreManager2Game : MonoBehaviour
         // Decrementa o tempo restante.
         time--;
 
-        // Atualiza os textos dos temporizadores.
-        Timer1.text = time.ToString() + " segundos";
-        Timer2.text = time.ToString() + " segundos";
+        int minutes = Mathf.FloorToInt(time / 60);
+        int seconds = Mathf.FloorToInt(time % 60);
+        
+        // Atualiza os textos dos temporizadores.             
+        Timer1.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        Timer2.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        //Timer1.text = time.ToString() + " segundos";
+        //Timer2.text = time.ToString() + " segundos";
 
-        // Se o tempo acabou, você pode adicionar aqui a lógica para terminar o jogo.
+        // Se o tempo acabou, vocï¿½ pode adicionar aqui a lï¿½gica para terminar o jogo.
         if (time <= 0)
         {
             // Por exemplo:

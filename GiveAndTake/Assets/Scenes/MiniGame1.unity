@@ -11478,6 +11478,7 @@ MonoBehaviour:
   topSlot: {fileID: 39308518}
   shake: {fileID: 0}
   audioSource: {fileID: 0}
+  scoreManager: {fileID: 2076425041}
 --- !u!4 &1790847656
 Transform:
   m_ObjectHideFlags: 0
