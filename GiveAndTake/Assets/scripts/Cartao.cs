@@ -35,17 +35,31 @@ public class Cartao : MonoBehaviour
         {
             Debug.Log("valor correto");
             audioSource.Play();
-            if (scoreManager2Game.cardsPlayer1.Contains(this))
+            if (scoreManager2Game.cardsPlayer1Direita.Contains(this))
             {
                 scoreManager2Game.AddScorePlayer1();
-                scoreManager2Game.cardsPlayer1.Remove(this);
-            
+                scoreManager2Game.cardsPlayer1Direita.Remove(this);
+                scoreManager2Game.showCards1Direita();
+
             }
+            else if (scoreManager2Game.cardsPlayer1Esquerda.Contains(this))
+            {
+                scoreManager2Game.AddScorePlayer1();
+                scoreManager2Game.cardsPlayer1Esquerda.Remove(this);
+                scoreManager2Game.showCards1Esquerda();
+            }
+            else if (scoreManager2Game.cardsPlayer2Esquerda.Contains(this))
+            {
+                scoreManager2Game.AddScorePlayer2();
+                scoreManager2Game.cardsPlayer2Esquerda.Remove(this);
+                scoreManager2Game.showCards2Esquerda();
+            }   
             else
             {
                 scoreManager2Game.AddScorePlayer2();
-                scoreManager2Game.cardsPlayer2.Remove(this);
-                
+                scoreManager2Game.cardsPlayer2Direita.Remove(this);
+                scoreManager2Game.showCards2Direita();
+
             }
             
             Destroy(gameObject);
