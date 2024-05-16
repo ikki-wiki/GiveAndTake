@@ -32,6 +32,8 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
+        VerifyIfTimerIsOn();
+
         // Increment the score based on the remaining time
         DecreaseScore();
 
@@ -102,6 +104,21 @@ public class ScoreManager : MonoBehaviour
     public float GetScore()
     {
         return score;
+    }
+
+    public void VerifyIfTimerIsOn()
+    {
+        if(timeManager.timeToggle.isOn){
+            scoreToggle.gameObject.SetActive(true);
+            scoreInputField.gameObject.SetActive(true);
+            if(scoreToggle.isOn){
+                displayScore.SetActive(true);
+            }
+        } else {
+            scoreToggle.gameObject.SetActive(false);
+            scoreInputField.gameObject.SetActive(false);
+            displayScore.SetActive(false);
+        }
     }
 
 }
