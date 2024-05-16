@@ -13691,8 +13691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   topSlot: {fileID: 39308518}
-  shake: {fileID: 0}
-  audioSource: {fileID: 0}
+  shake: {fileID: 1578903140}
+  audioSource: {fileID: 1790847657}
   scoreManager: {fileID: 2076425041}
 --- !u!4 &1790847656
 Transform:
