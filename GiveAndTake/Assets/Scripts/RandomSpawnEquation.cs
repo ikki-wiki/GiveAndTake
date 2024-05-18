@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class RandomSpawnEquation : MonoBehaviour
 {
-    //tenho 4 lugares definidos como o empty object para dar spawn, e tenho 4 prefabs para spawnar de forma aleatoria em cada lugar e nao pode repetir o prefab colocado, e quero que o prefab tenha uma escala de 55 no x e y
-    
     public GameObject[] prefabs;
     public GameObject[] spawnPoints;
 
@@ -27,6 +25,7 @@ public class RandomSpawnEquation : MonoBehaviour
             newPrefab.GetComponent<SpriteRenderer>().sortingOrder = 1;
             newPrefab.transform.localScale = new Vector3(55, 55, 1);
             newPrefab.SetActive(true);
+            newPrefab.transform.SetParent(spawnPoint.transform);
             List<GameObject> temp = new List<GameObject>(prefabs);
             temp.RemoveAt(randomIndex);
             prefabs = temp.ToArray();
