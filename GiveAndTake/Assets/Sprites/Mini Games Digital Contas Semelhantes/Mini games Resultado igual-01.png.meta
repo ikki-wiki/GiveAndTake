@@ -131,7 +131,7 @@ TextureImporter:
         width: 659
         height: 435
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: Mini games Resultado igual-01_1
       rect:
         serializedVersion: 2
-        x: 198
-        y: 840
-        width: 744
-        height: 546
+        x: 441
+        y: 1096
+        width: 245
+        height: 253
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: Mini games Resultado igual-01_2
       rect:
         serializedVersion: 2
-        x: 1290
-        y: 853
-        width: 767
-        height: 551
+        x: 1566
+        y: 1101
+        width: 248
+        height: 237
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: Mini games Resultado igual-01_3
       rect:
         serializedVersion: 2
-        x: 209
-        y: 268
-        width: 735
-        height: 501
+        x: 443
+        y: 474
+        width: 243
+        height: 245
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: Mini games Resultado igual-01_4
       rect:
         serializedVersion: 2
-        x: 1284
-        y: 247
-        width: 762
-        height: 527
+        x: 1569
+        y: 479
+        width: 240
+        height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,6 +223,90 @@ TextureImporter:
       bones: []
       spriteID: 28a70097eba04064891b3749eeaa7eb5
       internalID: -1930961870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini games Resultado igual-01_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 877
+        width: 783
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0128c09718a1d0144b50782ff06f75a4
+      internalID: 538298778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini games Resultado igual-01_6
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 882
+        width: 775
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262bae0053bb9b348a6cb4425e15a790
+      internalID: -574256182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini games Resultado igual-01_7
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 284
+        width: 764
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9105ab1d9c1b024b9d490fe036fcc2c
+      internalID: 1424739080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini games Resultado igual-01_8
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 273
+        width: 783
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8f4b140ddf8f74b89f2510752297a0
+      internalID: -272739971
       vertices: []
       indices: 
       edges: []
@@ -243,6 +327,10 @@ TextureImporter:
       Mini games Resultado igual-01_2: -1168051577
       Mini games Resultado igual-01_3: 1766533040
       Mini games Resultado igual-01_4: -1930961870
+      Mini games Resultado igual-01_5: 538298778
+      Mini games Resultado igual-01_6: -574256182
+      Mini games Resultado igual-01_7: 1424739080
+      Mini games Resultado igual-01_8: -272739971
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
