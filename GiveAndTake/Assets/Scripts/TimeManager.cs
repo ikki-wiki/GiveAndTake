@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class TimeManager : MonoBehaviour
 {
     public Toggle timeToggle;
-    public TMP_InputField timeInputField; 
-    public Text timeText; 
-    public GameObject displayTime; 
+    public TMP_InputField timeInputField;
+    public Text timeText;
+    public GameObject displayTime;
     private Coroutine timerCoroutine;
     public string sceneToLoad;
     public float defaultTime = 180f;
@@ -28,18 +28,19 @@ public class TimeManager : MonoBehaviour
         InitializeUI();
 
         // Add listener to time input field value change event
-        timeInputField.onValueChanged.AddListener(OnTimeInputValueChanged);
+        timeInputField.onEndEdit.AddListener(OnTimeInputValueChanged);
 
         // Add listener to time toggle value change event
         timeToggle.onValueChanged.AddListener(SetTimeEnabled);
     }
+
     public void SetTimeEnabled(bool isEnabled)
     {
         PlayerPrefs.SetInt("TimeEnabled", isEnabled ? 1 : 0);
         PlayerPrefs.Save();
 
         displayTime.SetActive(isEnabled);
-        timeInputField.text = GetTimeDuration(defaultTime).ToString();
+        timeInputField.text = FormatTime(GetTimeDuration(defaultTime));
 
         if (isEnabled)
         {
@@ -100,15 +101,17 @@ public class TimeManager : MonoBehaviour
     // Method called when the value of the time input field changes
     void OnTimeInputValueChanged(string value)
     {
-        float timeValue;
-        if (float.TryParse(value, out timeValue))
+        float timeValue = ParseTime(value);
+        if (timeValue >= 0)
         {
             SetTimeDuration(timeValue);
-            timeInputField.text = timeValue.ToString();
+            // Don't update the timeInputField text here to avoid recursive value change events
         }
         else
         {
             Debug.LogWarning("Invalid input for time value.");
+            // Optionally reset to the last valid time
+            timeInputField.text = FormatTime(GetTimeDuration(defaultTime));
         }
     }
 
@@ -116,13 +119,13 @@ public class TimeManager : MonoBehaviour
     {
         timeToggle.isOn = GetTimeEnabled();
         timeInputField.gameObject.SetActive(true);
-        timeInputField.text = GetTimeDuration(defaultTime).ToString();
+        timeInputField.text = FormatTime(GetTimeDuration(defaultTime));
         displayTime.SetActive(timeToggle.isOn);
 
         if (timeToggle.isOn)
         {
             StartTimer();
-        } 
+        }
     }
 
     public bool GetTimeEnabled()
@@ -140,5 +143,39 @@ public class TimeManager : MonoBehaviour
     {
         return PlayerPrefs.GetFloat("TimeDuration", defaultDuration);
     }
-}
 
+    // Helper method to format time as "MM:SS"
+    private string FormatTime(float time)
+    {
+        int minutes = Mathf.FloorToInt(time / 60);
+        int seconds = Mathf.FloorToInt(time % 60);
+        return string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    // Helper method to parse "MM:SS" format time
+    private float ParseTime(string timeString)
+    {
+        string[] timeParts = timeString.Split(':');
+        if (timeParts.Length == 2)
+        {
+            int minutes;
+            int seconds;
+            if (int.TryParse(timeParts[0], out minutes) && int.TryParse(timeParts[1], out seconds))
+            {
+                if (seconds < 60)
+                {
+                    return minutes * 60 + seconds;
+                }
+            }
+        }
+        else if (timeParts.Length == 1)
+        {
+            int minutes;
+            if (int.TryParse(timeParts[0], out minutes))
+            {
+                return minutes * 60;
+            }
+        }
+        return -1; // Return -1 if parsing fails
+    }
+}
