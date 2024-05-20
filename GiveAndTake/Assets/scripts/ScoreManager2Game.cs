@@ -10,6 +10,18 @@ public class ScoreManager2Game : MonoBehaviour
     int scorePlayer2 = 0;
     public Text scoreTextPlayer1;
     public Text scoreTextPlayer2;
+    public Text scoreTextWin1;
+    public Text scoreTextWin2;
+    public Text scoreTextLose1;
+    public Text scoreTextLose2;
+    public Text scoreTextDraw1;
+    public Text scoreTextDraw2;
+    public GameObject popUpWin1;
+    public GameObject popUpWin2;
+    public GameObject popUpLose1;
+    public GameObject popUpLose2;
+    public GameObject popUpDraw1;
+    public GameObject popUpDraw2;
     int time = 120;
     public Text Timer1;
     public Text Timer2;
@@ -17,6 +29,10 @@ public class ScoreManager2Game : MonoBehaviour
     public List<Cartao> cardsPlayer1Esquerda;
     public List<Cartao> cardsPlayer2Direita;
     public List<Cartao> cardsPlayer2Esquerda;
+    public GameObject background;
+    public AudioSource audioSource;
+    public GameObject popUpTecnico;
+    public GameObject bacgroundTecnico;
 
     private void Start()
     {
@@ -29,6 +45,8 @@ public class ScoreManager2Game : MonoBehaviour
         showCards2Esquerda();
 
         InvokeRepeating("UpdateTimer", 1f, 1f);
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void showCards1Direita()
@@ -107,7 +125,40 @@ public class ScoreManager2Game : MonoBehaviour
         if (time <= 0)
         {
             // Por exemplo:
-            // Time.timeScale = 0; // Pausa o jogo.
+            Time.timeScale = 0; // Pausa o jogo.
+
+            audioSource.Play();
+
+            background.SetActive(true);
+
+            if (scorePlayer1 > scorePlayer2)
+            {
+                scoreTextWin1.text = "A tua equipa fez "+ scorePlayer1.ToString() + " pontos";
+                popUpWin1.gameObject.SetActive(true);
+                scoreTextLose2.text = "A tua equipa fez " + scorePlayer2.ToString() + " pontos";
+                popUpLose2.gameObject.SetActive(true);
+
+            }
+            else if (scorePlayer1 < scorePlayer2)
+            {
+                scoreTextWin2.text = "A tua equipa fez " + scorePlayer2.ToString() + " pontos";
+                popUpWin2.gameObject.SetActive(true);
+                scoreTextLose1.text = "A tua equipa fez " + scorePlayer1.ToString() + " pontos";
+                popUpLose1.gameObject.SetActive(true);
+
+            }
+            else
+            {
+                scoreTextDraw1.text = "A tua equipa fez " + scorePlayer1.ToString() + " pontos";
+                popUpDraw1.gameObject.SetActive(true);
+                scoreTextDraw2.text = "A tua equipa fez " + scorePlayer2.ToString() + " pontos";
+                popUpDraw2.gameObject.SetActive(true);
+            }
+
+            bacgroundTecnico.SetActive(true);
+            popUpTecnico.SetActive(true);
+
+
         }
     }
 
