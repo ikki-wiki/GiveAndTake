@@ -14,6 +14,7 @@ public class goMiniGame : MonoBehaviour
 
     public void PlayGame()
     {
+        Time.timeScale = 1.0f;
         audioSource.Play();
         PlayerProfile.currentProfile.score = 0;
         SceneManager.LoadSceneAsync(2);
@@ -21,6 +22,7 @@ public class goMiniGame : MonoBehaviour
 
     public void PlayCompetitive()
     {
+        Time.timeScale = 1.0f;
         audioSource.Play();
         SceneManager.LoadSceneAsync(9);
     }
