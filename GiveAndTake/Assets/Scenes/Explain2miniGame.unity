@@ -381,6 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &95821182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,6 +862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &217999954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,7 +1277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.500031, y: 5.7672653}
+  m_AnchoredPosition: {x: -0.9, y: -13.6}
   m_SizeDelta: {x: 323.5313, y: 86.0545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497144118
@@ -1300,20 +1302,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a7c272bf0207f0e4ca1d48fa1d48ff21, type: 3}
-    m_FontSize: 12
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "1. VERIFICA O PRE\xC7O DA CARTA\n2. ARRASTA AS MOEDAS QUE CONSIDERAS NECESS\xC1RIAS
-    PARA PAGAR O VALOR DA CARTA\n3. RECEBES UM PONTO POR CADA PAGAMENTO CORRETO\n4.
-    GANHA A EQUIPA QUE TERMINAR COM MAIS PONTOS NO TOTAL"
+    m_LineSpacing: 2
+  m_Text: "1. VERIFICA O PRE\xC7O DA CARTA\n2. ARRASTA AS MOEDAS QUE PARA PAGAR O
+    VALOR DA CARTA\n3. RECEBES UM PONTO POR CADA PAGAMENTO CORRETO\n4. GANHA A EQUIPA
+    QUE TERMINAR COM MAIS PONTOS NO FINAL"
 --- !u!222 &497144119
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2145,6 +2147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &698863604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2487,6 +2490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &813189306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2963,6 +2967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &921222790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3184,6 +3189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &940652991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4462,8 +4468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.50001526, y: 18.604301}
-  m_SizeDelta: {x: 323.5313, y: 86.0545}
+  m_AnchoredPosition: {x: -0.7251, y: 33.9}
+  m_SizeDelta: {x: 269.45, y: 95.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1197860275
 MonoBehaviour:
@@ -4487,20 +4493,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a7c272bf0207f0e4ca1d48fa1d48ff21, type: 3}
-    m_FontSize: 12
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "1. VERIFICA O PRE\xC7O DA CARTA\n2. ARRASTA AS MOEDAS QUE CONSIDERAS NECESS\xC1RIAS
-    PARA PAGAR O VALOR DA CARTA\n3. RECEBES UM PONTO POR CADA PAGAMENTO CORRETO\n4.
-    GANHA A EQUIPA QUE TERMINAR COM MAIS PONTOS NO TOTAL"
+    m_LineSpacing: 2
+  m_Text: "1. VERIFICA O PRE\xC7O DA CARTA\n2. ARRASTA AS MOEDAS QUE PARA PAGAR O
+    VALOR DA CARTA\n3. RECEBES UM PONTO POR CADA PAGAMENTO CORRETO\n4. GANHA A EQUIPA
+    QUE TERMINAR COM MAIS PONTOS NO FINAL"
 --- !u!222 &1197860276
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5394,6 +5400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &1340976887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6103,6 +6110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &1660452641
 MonoBehaviour:
   m_ObjectHideFlags: 0

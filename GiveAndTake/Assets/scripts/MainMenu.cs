@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        Time.timeScale = 1.0f;
         audioSource.Play();
         SceneManager.LoadSceneAsync(1);
     }
