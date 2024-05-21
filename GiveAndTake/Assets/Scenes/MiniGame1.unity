@@ -658,7 +658,7 @@ MonoBehaviour:
   childSlots:
   - {fileID: 750536127}
   - {fileID: 347887062}
-  detectionRadius: 1
+  puzzleVerification: {fileID: 1790847655}
   slotValue: 0
 --- !u!114 &39308519
 MonoBehaviour:
@@ -1538,7 +1538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 1
+  puzzleVerification: {fileID: 1790847655}
   slotValue: 0
 --- !u!114 &90474949
 MonoBehaviour:
@@ -2263,7 +2263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 1
+  puzzleVerification: {fileID: 1790847655}
   slotValue: 0
 --- !u!114 &147006233
 MonoBehaviour:
@@ -3557,7 +3557,7 @@ MonoBehaviour:
   childSlots:
   - {fileID: 147006232}
   - {fileID: 901242939}
-  detectionRadius: 1
+  puzzleVerification: {fileID: 1790847655}
   slotValue: 0
 --- !u!114 &347887063
 MonoBehaviour:
@@ -5407,7 +5407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 1
+  puzzleVerification: {fileID: 1790847655}
   slotValue: 0
 --- !u!114 &504654783
 MonoBehaviour:
@@ -6107,7 +6107,7 @@ MonoBehaviour:
   childSlots:
   - {fileID: 504654782}
   - {fileID: 90474948}
-  detectionRadius: 1
+  puzzleVerification: {fileID: 1790847655}
   slotValue: 0
 --- !u!114 &750536128
 MonoBehaviour:
@@ -6819,7 +6819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 1
+  puzzleVerification: {fileID: 1790847655}
   slotValue: 0
 --- !u!114 &901242940
 MonoBehaviour:
@@ -11987,12 +11987,12 @@ RectTransform:
   m_Children:
   - {fileID: 692327196}
   - {fileID: 39308517}
-  - {fileID: 347887061}
-  - {fileID: 901242938}
-  - {fileID: 147006231}
   - {fileID: 750536126}
-  - {fileID: 90474947}
+  - {fileID: 347887061}
   - {fileID: 504654781}
+  - {fileID: 90474947}
+  - {fileID: 147006231}
+  - {fileID: 901242938}
   - {fileID: 1062822302}
   - {fileID: 1603442758}
   - {fileID: 1067037729}
@@ -16030,7 +16030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2090539013
 RectTransform:
   m_ObjectHideFlags: 0
