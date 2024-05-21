@@ -9,48 +9,76 @@ public class PuzzleVerification : MonoBehaviour
     public shake shake;
     public AudioSource audioSource;
     public ScoreManager scoreManager;
+    private int counter = 0;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Recursive function to verify the pyramid structure
-    private bool VerifyPyramidStructure(ItemSlot slot)
+    // Method to check if all slots are filled
+    public void CheckAllSlotsFilled()
     {
-        // Base case: if the slot is null, return true
+        if (AllSlotsFilled(topSlot))
+        {
+            VerifyPuzzle();
+        }
+    }
+
+    // Recursive method to check if all slots are filled
+    private bool AllSlotsFilled(ItemSlot slot)
+    {
         if (slot.slotValue == 0)
         {
             return false;
         }
 
-        // Get the expected value for this slot
-        float expectedValue = slot.slotValue;
-
-        // Check if the sum of coins in child slots matches the expected value
-        float sum = 0;
         foreach (ItemSlot childSlot in slot.childSlots)
         {
-            if (childSlot != null )
+            if (!AllSlotsFilled(childSlot))
             {
-                sum += childSlot.CoinValue();
+                return false;
             }
         }
+        return true;
+    }
 
-        if(slot.childSlots.Count == 0)
+    // Recursive function to verify the pyramid structure
+    private bool VerifyPyramidStructure(ItemSlot slot)
+    {   
+        if (slot.slotValue == 0)
         {
-            sum = expectedValue;
-        }
-
-
-        if (sum != expectedValue)
-        {
-            // Incorrect placement
-            Debug.Log("Incorrect placement!");
+            Debug.Log($"Slot {slot.name} is empty.");
             return false;
         }
 
-        // Recursively verify child slots
+        float expectedValue = slot.slotValue;
+        Debug.Log($"Slot {slot.name} expected value: {expectedValue}");
+
+        float sum = 0;
+        foreach (ItemSlot childSlot in slot.childSlots) 
+        {
+            if (childSlot != null)
+            {
+                float childValue = childSlot.slotValue;
+                Debug.Log($"Child slot {childSlot.name} value: {childValue}");
+                sum += childValue; 
+            }
+        }
+
+        if (slot.childSlots.Count == 0)
+        {
+            sum = expectedValue; 
+        }
+
+        Debug.Log($"Slot {slot.name} sum of child values: {sum}, expected: {expectedValue}");
+
+        if (sum != expectedValue) 
+        {
+            Debug.Log($"Incorrect placement in slot {slot.name}!");
+            return false;
+        }
+
         foreach (ItemSlot childSlot in slot.childSlots)
         {
             if (!VerifyPyramidStructure(childSlot))
@@ -59,28 +87,24 @@ public class PuzzleVerification : MonoBehaviour
             }
         }
 
-        // All child slots verified
         return true;
     }
 
-    // Method to start the verification process
     public void VerifyPuzzle()
     {
         bool isCorrect = VerifyPyramidStructure(topSlot);
         if (isCorrect)
         {
-            // Puzzle solved
             Debug.Log("Puzzle solved!");
             PlayerProfile.currentProfile.score += scoreManager.GetScore();
             SceneManager.LoadSceneAsync(7);
-            // You can add more feedback here if needed
         }
         else
         {
-            // Puzzle not solved
             Debug.Log("Puzzle not solved!");
             shake.StartShake();
             audioSource.Play();
         }
     }
 }
+
