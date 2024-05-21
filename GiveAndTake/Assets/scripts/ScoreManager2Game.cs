@@ -166,12 +166,12 @@ public class ScoreManager2Game : MonoBehaviour
     public void AddScorePlayer1()
     {
         scorePlayer1++;
-        scoreTextPlayer1.text = scorePlayer1.ToString();
+        scoreTextPlayer1.text = scorePlayer1.ToString() + " pontos";
     }
 
     public void AddScorePlayer2()
     {
         scorePlayer2++;
-        scoreTextPlayer2.text = scorePlayer2.ToString();
+        scoreTextPlayer2.text = scorePlayer2.ToString() + " pontos";
     }
 }

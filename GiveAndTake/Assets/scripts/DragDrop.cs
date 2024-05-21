@@ -10,6 +10,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private CanvasGroup canvasGroup;
     public float value;
     AudioSource audioSource;
+    public GameObject image;
 
     private void Awake()
     {
@@ -36,6 +37,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
+        if (gameObject.transform.parent == canvas.transform)
+        {
+            gameObject.transform.SetParent(image.transform);
+        }
+        
     }
 
     public void OnPointerDown(PointerEventData eventData)
