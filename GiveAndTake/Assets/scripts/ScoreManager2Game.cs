@@ -243,11 +243,11 @@ public class ScoreManager2Game : MonoBehaviour
         if (scorePlayer1 == 1)
         {
 
-            scoreTextPlayer2.text = scorePlayer1.ToString() + " ponto";
+            scoreTextPlayer2.text = scorePlayer2.ToString() + " ponto";
         }
         else
         {
-            scoreTextPlayer2.text = scorePlayer1.ToString() + " pontos";
+            scoreTextPlayer2.text = scorePlayer2.ToString() + " pontos";
         }
 
     }
