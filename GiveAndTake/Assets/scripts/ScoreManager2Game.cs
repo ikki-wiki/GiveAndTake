@@ -133,25 +133,83 @@ public class ScoreManager2Game : MonoBehaviour
 
             if (scorePlayer1 > scorePlayer2)
             {
-                scoreTextWin1.text = "A tua equipa fez "+ scorePlayer1.ToString() + " pontos";
-                popUpWin1.gameObject.SetActive(true);
-                scoreTextLose2.text = "A tua equipa fez " + scorePlayer2.ToString() + " pontos";
+                if (scorePlayer1 == 1)
+                {
+
+                    scoreTextWin1.text = "A tua equipa fez " + scorePlayer1.ToString() + " ponto";
+                }
+                else
+                {
+                    scoreTextWin1.text = "A tua equipa fez " + scorePlayer1.ToString() + " pontos";
+                    
+                }
+                if (scorePlayer2 == 1)
+                {
+
+                    scoreTextLose2.text = "A tua equipa fez " + scorePlayer2.ToString() + " ponto";
+                }
+                else
+                {
+                    scoreTextLose2.text = "A tua equipa fez " + scorePlayer2.ToString() + " pontos";
+
+                }
                 popUpLose2.gameObject.SetActive(true);
+                popUpWin1.gameObject.SetActive(true);
 
             }
             else if (scorePlayer1 < scorePlayer2)
             {
-                scoreTextWin2.text = "A tua equipa fez " + scorePlayer2.ToString() + " pontos";
+
+                if (scorePlayer1 == 1)
+                {
+
+                    scoreTextLose1.text = "A tua equipa fez " + scorePlayer1.ToString() + " ponto";
+                }
+                else
+                {
+                    scoreTextLose1.text = "A tua equipa fez " + scorePlayer1.ToString() + " pontos";
+
+                }
+                if (scorePlayer2 == 1)
+                {
+
+                    scoreTextWin2.text = "A tua equipa fez " + scorePlayer2.ToString() + " ponto";
+                }
+                else
+                {
+                    scoreTextWin2.text = "A tua equipa fez " + scorePlayer2.ToString() + " pontos";
+
+                }
+
                 popUpWin2.gameObject.SetActive(true);
-                scoreTextLose1.text = "A tua equipa fez " + scorePlayer1.ToString() + " pontos";
                 popUpLose1.gameObject.SetActive(true);
 
             }
             else
             {
-                scoreTextDraw1.text = "A tua equipa fez " + scorePlayer1.ToString() + " pontos";
+
+                if (scorePlayer1 == 1)
+                {
+
+                    scoreTextDraw1.text = "A tua equipa fez " + scorePlayer1.ToString() + " ponto";
+                }
+                else
+                {
+                    scoreTextDraw1.text = "A tua equipa fez " + scorePlayer1.ToString() + " pontos";
+
+                }
+                if (scorePlayer2 == 1)
+                {
+
+                    scoreTextDraw2.text = "A tua equipa fez " + scorePlayer2.ToString() + " ponto";
+                }
+                else
+                {
+                    scoreTextDraw2.text = "A tua equipa fez " + scorePlayer2.ToString() + " pontos";
+
+                }
+
                 popUpDraw1.gameObject.SetActive(true);
-                scoreTextDraw2.text = "A tua equipa fez " + scorePlayer2.ToString() + " pontos";
                 popUpDraw2.gameObject.SetActive(true);
             }
 
@@ -166,12 +224,31 @@ public class ScoreManager2Game : MonoBehaviour
     public void AddScorePlayer1()
     {
         scorePlayer1++;
-        scoreTextPlayer1.text = scorePlayer1.ToString() + " pontos";
+        if (scorePlayer1 == 1)
+        {
+
+            scoreTextPlayer1.text = scorePlayer1.ToString() + " ponto";
+        }
+        else
+        {
+            scoreTextPlayer1.text = scorePlayer1.ToString() + " pontos";
+        }
+
     }
 
     public void AddScorePlayer2()
     {
         scorePlayer2++;
-        scoreTextPlayer2.text = scorePlayer2.ToString() + " pontos";
+
+        if (scorePlayer1 == 1)
+        {
+
+            scoreTextPlayer2.text = scorePlayer1.ToString() + " ponto";
+        }
+        else
+        {
+            scoreTextPlayer2.text = scorePlayer1.ToString() + " pontos";
+        }
+
     }
 }
