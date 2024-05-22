@@ -25,6 +25,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.6f;
         audioSource.Play();
+        if (gameObject.transform.parent.CompareTag("ItemSlot"))
+        {
+            ItemSlot itemSlot = gameObject.transform.parent.GetComponent<ItemSlot>();
+            itemSlot.slotValue = 0;
+        }
         gameObject.transform.SetParent(canvas.transform);
     }
 
