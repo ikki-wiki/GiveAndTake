@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.01
+  image: {fileID: 0}
 --- !u!114 &8824904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,6 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+  image: {fileID: 0}
 --- !u!114 &30064139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,7 +621,7 @@ GameObject:
   - component: {fileID: 39308522}
   m_Layer: 5
   m_Name: ItemSlot
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -926,6 +928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.01
+  image: {fileID: 0}
 --- !u!114 &48145411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,7 +1504,7 @@ GameObject:
   - component: {fileID: 90474952}
   m_Layer: 5
   m_Name: ItemSlot (4)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2076,6 +2079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.2
+  image: {fileID: 0}
 --- !u!114 &126111643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2226,7 +2230,7 @@ GameObject:
   - component: {fileID: 147006236}
   m_Layer: 5
   m_Name: ItemSlot (5)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2599,6 +2603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.02
+  image: {fileID: 0}
 --- !u!114 &191717579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2799,6 +2804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  image: {fileID: 0}
 --- !u!114 &237682904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3042,6 +3048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  image: {fileID: 0}
 --- !u!114 &247155206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3518,7 +3525,7 @@ GameObject:
   - component: {fileID: 347887066}
   m_Layer: 5
   m_Name: ItemSlot (2)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4547,6 +4554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.05
+  image: {fileID: 0}
 --- !u!114 &434192195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4865,6 +4873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  image: {fileID: 0}
 --- !u!114 &441271446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5220,6 +5229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &485665055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5370,7 +5380,7 @@ GameObject:
   - component: {fileID: 504654786}
   m_Layer: 5
   m_Name: ItemSlot (3)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6068,7 +6078,7 @@ GameObject:
   - component: {fileID: 750536131}
   m_Layer: 5
   m_Name: ItemSlot (1)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6632,6 +6642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &854932800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6782,7 +6793,7 @@ GameObject:
   - component: {fileID: 901242943}
   m_Layer: 5
   m_Name: ItemSlot (6)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7066,6 +7077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &905083073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7768,6 +7780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.2
+  image: {fileID: 0}
 --- !u!114 &938092590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8247,6 +8260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+  image: {fileID: 0}
 --- !u!114 &1062822306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8468,6 +8482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+  image: {fileID: 0}
 --- !u!114 &1067037733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9250,6 +9265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.2
+  image: {fileID: 0}
 --- !u!114 &1137435333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9820,6 +9836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.02
+  image: {fileID: 0}
 --- !u!114 &1219440541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10223,6 +10240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &1255107402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10423,6 +10441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.05
+  image: {fileID: 0}
 --- !u!114 &1275432437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10783,6 +10802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &1337847865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10971,6 +10991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.2
+  image: {fileID: 0}
 --- !u!114 &1362508109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11437,6 +11458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &1480180773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12214,6 +12236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.01
+  image: {fileID: 0}
 --- !u!114 &1579063149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12435,6 +12458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+  image: {fileID: 0}
 --- !u!114 &1603442762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12865,6 +12889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.02
+  image: {fileID: 0}
 --- !u!114 &1646285160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13123,6 +13148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &1678181227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14289,6 +14315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.05
+  image: {fileID: 0}
 --- !u!114 &1847635689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15571,6 +15598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.02
+  image: {fileID: 0}
 --- !u!114 &2027338262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15829,6 +15857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &2033528046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16232,6 +16261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  image: {fileID: 0}
 --- !u!114 &2096224071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16453,6 +16483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.01
+  image: {fileID: 0}
 --- !u!114 &2122511585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16653,6 +16684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.05
+  image: {fileID: 0}
 --- !u!114 &2124971229
 MonoBehaviour:
   m_ObjectHideFlags: 0

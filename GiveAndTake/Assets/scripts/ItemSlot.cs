@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
@@ -29,7 +31,11 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 0, 0);
 
             // Notify the puzzle verification
-            puzzleVerification.CheckAllSlotsFilled(); // New method to check if all slots are filled
+            if(SceneManager.GetActiveScene().name == "MiniGame1" || SceneManager.GetActiveScene().name == "2PlayerMinigame"){
+                Debug.Log("Checking all slots filled");
+                puzzleVerification.CheckAllSlotsFilled(); // New method to check if all slots are filled
+            }
+                
         }
     }
 }
