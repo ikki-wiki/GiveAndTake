@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.2
+  image: {fileID: 0}
 --- !u!114 &9857266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,6 +948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.05
+  image: {fileID: 0}
 --- !u!114 &119163481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1168,6 +1170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+  image: {fileID: 0}
 --- !u!114 &128994781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1578,7 +1581,7 @@ GameObject:
   - component: {fileID: 199396908}
   m_Layer: 0
   m_Name: SlotItem (2)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1615,7 +1618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 10
+  puzzleVerification: {fileID: 0}
   slotValue: 0
 --- !u!114 &199396906
 MonoBehaviour:
@@ -1838,6 +1841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  image: {fileID: 0}
 --- !u!114 &208280951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2402,6 +2406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.01
+  image: {fileID: 0}
 --- !u!114 &262376368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2965,6 +2970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &351761847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3277,7 +3283,7 @@ GameObject:
   - component: {fileID: 426895118}
   m_Layer: 0
   m_Name: SlotItem (4)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3314,7 +3320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 10
+  puzzleVerification: {fileID: 0}
   slotValue: 0
 --- !u!114 &426895116
 MonoBehaviour:
@@ -3537,6 +3543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &436801937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4051,6 +4058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.01
+  image: {fileID: 0}
 --- !u!114 &478374198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4605,7 +4613,7 @@ GameObject:
   - component: {fileID: 636221748}
   m_Layer: 0
   m_Name: SlotItem
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4642,7 +4650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 10
+  puzzleVerification: {fileID: 0}
   slotValue: 0
 --- !u!114 &636221746
 MonoBehaviour:
@@ -5170,6 +5178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.02
+  image: {fileID: 0}
 --- !u!114 &671218561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5466,6 +5475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  image: {fileID: 0}
 --- !u!114 &693322589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5871,6 +5881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &712526481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6202,6 +6213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.05
+  image: {fileID: 0}
 --- !u!114 &799214747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6617,6 +6629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.02
+  image: {fileID: 0}
 --- !u!114 &858036424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6838,6 +6851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.02
+  image: {fileID: 0}
 --- !u!114 &859812726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7307,7 +7321,7 @@ GameObject:
   - component: {fileID: 891624403}
   m_Layer: 0
   m_Name: SlotItem (3)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7344,7 +7358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 10
+  puzzleVerification: {fileID: 0}
   slotValue: 0
 --- !u!114 &891624401
 MonoBehaviour:
@@ -7818,6 +7832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.02
+  image: {fileID: 0}
 --- !u!114 &926626036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8125,6 +8140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &953411488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8274,7 +8290,7 @@ GameObject:
   - component: {fileID: 983889865}
   m_Layer: 0
   m_Name: SlotItem (1)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8311,7 +8327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 10
+  puzzleVerification: {fileID: 0}
   slotValue: 0
 --- !u!114 &983889863
 MonoBehaviour:
@@ -8534,6 +8550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.05
+  image: {fileID: 0}
 --- !u!114 &1006549963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8834,6 +8851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &1066456617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9055,6 +9073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &1069086609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9276,6 +9295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.01
+  image: {fileID: 0}
 --- !u!114 &1073279300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9572,6 +9592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.2
+  image: {fileID: 0}
 --- !u!114 &1188302391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9793,6 +9814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.5
+  image: {fileID: 0}
 --- !u!114 &1197638021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10155,7 +10177,7 @@ GameObject:
   - component: {fileID: 1231679050}
   m_Layer: 0
   m_Name: SlotItem (5)
-  m_TagString: Untagged
+  m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10192,7 +10214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childSlots: []
-  detectionRadius: 10
+  puzzleVerification: {fileID: 0}
   slotValue: 0
 --- !u!114 &1231679048
 MonoBehaviour:
@@ -10415,6 +10437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  image: {fileID: 0}
 --- !u!114 &1235145409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11307,6 +11330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.2
+  image: {fileID: 0}
 --- !u!114 &1352137524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11528,6 +11552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  image: {fileID: 0}
 --- !u!114 &1373257289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12097,6 +12122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.2
+  image: {fileID: 0}
 --- !u!114 &1441245656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12983,6 +13009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+  image: {fileID: 0}
 --- !u!114 &1545495907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13730,6 +13757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.05
+  image: {fileID: 0}
 --- !u!114 &1647900055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13989,6 +14017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.1
+  image: {fileID: 0}
 --- !u!114 &1726705979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14975,6 +15004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0.01
+  image: {fileID: 0}
 --- !u!114 &1963475527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15591,6 +15621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+  image: {fileID: 0}
 --- !u!114 &2058132312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16158,6 +16189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+  image: {fileID: 0}
 --- !u!114 &2144125247
 MonoBehaviour:
   m_ObjectHideFlags: 0

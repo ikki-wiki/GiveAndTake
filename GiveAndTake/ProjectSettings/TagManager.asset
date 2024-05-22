@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coin
+  - ItemSlot
   layers:
   - Default
   - TransparentFX
