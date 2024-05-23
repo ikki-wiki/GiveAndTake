@@ -240,7 +240,7 @@ public class ScoreManager2Game : MonoBehaviour
     {
         scorePlayer2++;
 
-        if (scorePlayer1 == 1)
+        if (scorePlayer2 == 1)
         {
 
             scoreTextPlayer2.text = scorePlayer2.ToString() + " ponto";

@@ -56181,7 +56181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Boa Ganhaste!
+  m_Text: Ganhaste!
 --- !u!222 &801086591
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -140903,7 +140903,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Boa Ganhaste!
+  m_Text: Ganhaste!
 --- !u!222 &2048337394
 CanvasRenderer:
   m_ObjectHideFlags: 0
