@@ -25,7 +25,36 @@ public class TrianglePuzzleVerify : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    private void Start()
+    {
+        // Assign this script as the puzzle verifier for each slot
+        slotBlue1.trianglePuzzleVerifier = this;
+        slotBlue2.trianglePuzzleVerifier = this;
+        slotBlue3.trianglePuzzleVerifier = this;
+        slotRed1.trianglePuzzleVerifier = this;
+        slotRed2.trianglePuzzleVerifier = this;
+        slotRed3.trianglePuzzleVerifier = this;
+    }
 
+    // Method to check if all slots are filled
+    public void CheckAllSlotsFilled()
+    {
+        if (AllSlotsFilled())
+        {
+            VerifyPuzzle();
+        }
+    }
+
+    // Method to check if all slots have coins
+    private bool AllSlotsFilled()
+    {
+        return slotBlue1.slotValue != 0 &&
+               slotBlue2.slotValue != 0 &&
+               slotBlue3.slotValue != 0 &&
+               slotRed1.slotValue != 0 &&
+               slotRed2.slotValue != 0 &&
+               slotRed3.slotValue != 0;
+    }
 
     public void VerifyPuzzle()
     {
@@ -51,21 +80,26 @@ public class TrianglePuzzleVerify : MonoBehaviour
         float sideValue2 = slotRed2.slotValue + slotBlue2.slotValue + slotRed3.slotValue;
         float sideValue3 = slotRed3.slotValue + slotBlue3.slotValue + slotRed1.slotValue;
 
-        if(slotBlue1.slotValue == 0 || slotBlue2.slotValue == 0 || slotBlue3.slotValue == 0 || slotRed1.slotValue == 0 || slotRed2.slotValue == 0 || slotRed3.slotValue == 0)
+        if (slotBlue1.slotValue == 0 || slotBlue2.slotValue == 0 || slotBlue3.slotValue == 0 || slotRed1.slotValue == 0 || slotRed2.slotValue == 0 || slotRed3.slotValue == 0)
         {
             return false;
         }
 
-        if(sideValue2 == sideValue){
-            if(sideValue3 == sideValue){
+        if (sideValue2 == sideValue)
+        {
+            if (sideValue3 == sideValue)
+            {
                 PlayerProfile.currentProfile.score += scoreManager.GetScore();
                 return true;
-            } else {
+            }
+            else
+            {
                 return false;
             }
-        } else {
+        }
+        else
+        {
             return false;
         }
-
     }
 }

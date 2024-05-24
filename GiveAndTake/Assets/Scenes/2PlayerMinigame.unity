@@ -160,6 +160,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2734977
 AudioSource:
@@ -653,6 +654,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &6482026
 AudioSource:
@@ -889,6 +891,7 @@ MonoBehaviour:
   - {fileID: 1521787203}
   - {fileID: 1657478188}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &6510917
 AudioSource:
@@ -1424,6 +1427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &16015603
 AudioSource:
@@ -2864,6 +2868,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &39308519
 MonoBehaviour:
@@ -3822,6 +3827,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &44178527
 AudioSource:
@@ -4056,6 +4062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &52372737
 AudioSource:
@@ -4292,6 +4299,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 380223584}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &53861938
 AudioSource:
@@ -4526,6 +4534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &58548091
 AudioSource:
@@ -4759,7 +4768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: -33.4}
+  m_AnchoredPosition: {x: 0, y: -33.4}
   m_SizeDelta: {x: 31.1393, y: 30.204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &59041801
@@ -4837,6 +4846,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &60255492
 AudioSource:
@@ -6913,6 +6923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &90474949
 MonoBehaviour:
@@ -7130,6 +7141,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &90521742
 AudioSource:
@@ -7586,6 +7598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &101049302
 AudioSource:
@@ -8042,6 +8055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &109332458
 AudioSource:
@@ -8278,6 +8292,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &114699137
 AudioSource:
@@ -8736,6 +8751,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &122210206
 AudioSource:
@@ -8969,7 +8985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022888, y: 59.7}
+  m_AnchoredPosition: {x: 0, y: 59.7}
   m_SizeDelta: {x: 294.4295, y: 71.1435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &122315833
@@ -8999,7 +9015,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -9049,6 +9065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &123352802
 AudioSource:
@@ -10140,6 +10157,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &146480575
 AudioSource:
@@ -10393,6 +10411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &147006233
 MonoBehaviour:
@@ -10608,6 +10627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &148324424
 AudioSource:
@@ -11066,6 +11086,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &164766196
 AudioSource:
@@ -11748,7 +11769,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207, y: -100.08}
+  m_AnchoredPosition: {x: 0, y: -100.08}
   m_SizeDelta: {x: 261.0219, y: 140.7694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172526678
@@ -13011,6 +13032,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &206676938
 AudioSource:
@@ -13247,6 +13269,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &207398253
 AudioSource:
@@ -13672,6 +13695,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &212692601
 AudioSource:
@@ -13908,6 +13932,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 1385162413}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &225865369
 AudioSource:
@@ -14366,6 +14391,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &229985865
 AudioSource:
@@ -16001,7 +16027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.289, y: -106}
+  m_AnchoredPosition: {x: 0, y: -106}
   m_SizeDelta: {x: 261.0219, y: 140.7694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250791185
@@ -16079,6 +16105,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &252712245
 AudioSource:
@@ -17390,6 +17417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &267660317
 AudioSource:
@@ -17659,6 +17687,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 1825832993}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &279819947
 AudioSource:
@@ -18117,6 +18146,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &288357313
 AudioSource:
@@ -18675,6 +18705,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &292033199
 AudioSource:
@@ -19293,6 +19324,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &295631408
 MonoBehaviour:
@@ -19369,6 +19401,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &296926844
 AudioSource:
@@ -19827,6 +19860,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &305457689
 AudioSource:
@@ -20474,6 +20508,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &313064584
 AudioSource:
@@ -20710,6 +20745,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 613589710}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &318877435
 AudioSource:
@@ -20946,6 +20982,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &325374457
 AudioSource:
@@ -22245,6 +22282,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &347887063
 MonoBehaviour:
@@ -22684,6 +22722,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &356046866
 AudioSource:
@@ -23328,7 +23367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: 17.274}
+  m_AnchoredPosition: {x: 0, y: 17.274}
   m_SizeDelta: {x: 529.23, y: 71.1435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &363153673
@@ -23358,7 +23397,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -24340,6 +24379,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &375422273
 AudioSource:
@@ -24576,6 +24616,7 @@ MonoBehaviour:
   - {fileID: 2028676604}
   - {fileID: 1260328287}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &379550901
 AudioSource:
@@ -24812,6 +24853,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &380223585
 AudioSource:
@@ -25589,6 +25631,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &395762582
 AudioSource:
@@ -25825,6 +25868,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &399357054
 AudioSource:
@@ -26281,6 +26325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &402145773
 AudioSource:
@@ -26736,7 +26781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000082031, y: 59.7}
+  m_AnchoredPosition: {x: 0, y: 59.7}
   m_SizeDelta: {x: 156.4413, y: 32.078}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &402590860
@@ -27186,6 +27231,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &415046777
 AudioSource:
@@ -29762,8 +29808,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000012875, y: 59.7}
-  m_SizeDelta: {x: 333.3027, y: 71.1435}
+  m_AnchoredPosition: {x: 0, y: 59.7}
+  m_SizeDelta: {x: 367.5224, y: 71.1435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &437708447
 MonoBehaviour:
@@ -29792,13 +29838,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Uau um empate!
+  m_Text: Houve um empate!
 --- !u!222 &437708448
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30033,6 +30079,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &439503999
 AudioSource:
@@ -31157,6 +31204,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 164766195}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &461928715
 AudioSource:
@@ -31391,6 +31439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &463937213
 AudioSource:
@@ -31627,6 +31676,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &464820113
 AudioSource:
@@ -32334,7 +32384,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -32606,6 +32656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &474084396
 AudioSource:
@@ -33062,6 +33113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &477428740
 AudioSource:
@@ -33518,6 +33570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &484426180
 AudioSource:
@@ -35070,6 +35123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &504654783
 MonoBehaviour:
@@ -35773,6 +35827,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &518130103
 AudioSource:
@@ -36231,6 +36286,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &525936551
 AudioSource:
@@ -36464,7 +36520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.003836155, y: -31.140182}
+  m_AnchoredPosition: {x: 0, y: -31.140182}
   m_SizeDelta: {x: 45.2616, y: 46.8483}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526162484
@@ -36617,6 +36673,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &527613425
 AudioSource:
@@ -37873,6 +37930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &544730848
 AudioSource:
@@ -39377,6 +39435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &560038617
 MonoBehaviour:
@@ -39451,6 +39510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &561543991
 AudioSource:
@@ -40129,6 +40189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &564404782
 AudioSource:
@@ -41029,6 +41090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &572643399
 AudioSource:
@@ -41931,6 +41993,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &609694809
 AudioSource:
@@ -42800,6 +42863,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &613589711
 AudioSource:
@@ -43891,6 +43955,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 375422272}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &629216829
 AudioSource:
@@ -45005,6 +45070,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &650547666
 AudioSource:
@@ -45588,6 +45654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &655894187
 MonoBehaviour:
@@ -46552,6 +46619,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &673876239
 AudioSource:
@@ -47089,6 +47157,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 1786575834}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &685181691
 AudioSource:
@@ -48147,6 +48216,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &696226570
 AudioSource:
@@ -48383,6 +48453,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &698060993
 AudioSource:
@@ -48806,6 +48877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &710933421
 AudioSource:
@@ -50786,6 +50858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &736885195
 AudioSource:
@@ -51464,6 +51537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &745678860
 AudioSource:
@@ -51941,6 +52015,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &750536128
 MonoBehaviour:
@@ -52821,7 +52896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: 17.274}
+  m_AnchoredPosition: {x: 0, y: 17.274}
   m_SizeDelta: {x: 529.23, y: 71.1435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761676584
@@ -52851,7 +52926,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -53125,6 +53200,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &766768730
 AudioSource:
@@ -53438,6 +53514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &772675378
 AudioSource:
@@ -53863,6 +53940,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 527613424}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &776462344
 AudioSource:
@@ -55220,6 +55298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &786319138
 AudioSource:
@@ -55454,6 +55533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &789594249
 AudioSource:
@@ -55690,6 +55770,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &791597986
 AudioSource:
@@ -56175,7 +56256,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -56227,6 +56308,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &806701032
 AudioSource:
@@ -56907,6 +56989,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 395762581}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &813070425
 AudioSource:
@@ -57687,6 +57770,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &817603905
 AudioSource:
@@ -58800,6 +58884,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &826863221
 AudioSource:
@@ -59371,6 +59456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &836368862
 AudioSource:
@@ -59607,6 +59693,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &840108111
 AudioSource:
@@ -60063,6 +60150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &841217222
 AudioSource:
@@ -60708,6 +60796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &854677208
 AudioSource:
@@ -61166,6 +61255,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &856621271
 AudioSource:
@@ -62288,6 +62378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &867288406
 AudioSource:
@@ -63379,6 +63470,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &885030028
 AudioSource:
@@ -63613,6 +63705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &886148651
 AudioSource:
@@ -64068,7 +64161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000082031, y: 59.7}
+  m_AnchoredPosition: {x: 0, y: 59.7}
   m_SizeDelta: {x: 156.4413, y: 32.078}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890902147
@@ -64146,6 +64239,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &898561048
 AudioSource:
@@ -64380,6 +64474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &899405111
 AudioSource:
@@ -64633,6 +64728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &901242940
 MonoBehaviour:
@@ -64847,7 +64943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022888, y: 59.7}
+  m_AnchoredPosition: {x: 0, y: 59.7}
   m_SizeDelta: {x: 294.4295, y: 71.1435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901769698
@@ -64877,7 +64973,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -66294,6 +66390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &918402635
 AudioSource:
@@ -67236,6 +67333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &934664423
 AudioSource:
@@ -68220,7 +68318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207, y: -100.08}
+  m_AnchoredPosition: {x: 0, y: -100.08}
   m_SizeDelta: {x: 261.0219, y: 140.7694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &945580182
@@ -68298,6 +68396,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 1623373757}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &951134405
 AudioSource:
@@ -68692,6 +68791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &956125981
 MonoBehaviour:
@@ -69878,6 +69978,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &970367857
 AudioSource:
@@ -70301,6 +70402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &979736944
 AudioSource:
@@ -71953,6 +72055,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1005573477
 AudioSource:
@@ -72631,6 +72734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1014195399
 AudioSource:
@@ -73533,6 +73637,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1042170570
 AudioSource:
@@ -73769,6 +73874,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1042322347
 AudioSource:
@@ -74005,6 +74111,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1044828315
 AudioSource:
@@ -74461,6 +74568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1054266148
 AudioSource:
@@ -74697,6 +74805,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 2058409646}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1060192343
 AudioSource:
@@ -75375,6 +75484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1073011132
 AudioSource:
@@ -77626,7 +77736,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9, y: 101}
+  m_AnchoredPosition: {x: 0, y: 101}
   m_SizeDelta: {x: 261.0219, y: 140.7694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088510021
@@ -77701,7 +77811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: -8.6327}
+  m_AnchoredPosition: {x: 0, y: -8.6327}
   m_SizeDelta: {x: 683.9023, y: 65.522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088665274
@@ -78003,6 +78113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1109859370
 AudioSource:
@@ -78648,6 +78759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1120893836
 AudioSource:
@@ -81344,6 +81456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1141920448
 AudioSource:
@@ -81577,7 +81690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: 17.274}
+  m_AnchoredPosition: {x: 0, y: 17.274}
   m_SizeDelta: {x: 529.23, y: 71.1435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143818947
@@ -81607,7 +81720,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -83255,6 +83368,7 @@ MonoBehaviour:
   - {fileID: 1683499617}
   - {fileID: 1465806897}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1170018287
 AudioSource:
@@ -83489,6 +83603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1171699091
 AudioSource:
@@ -85532,6 +85647,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1197590137
 AudioSource:
@@ -86249,7 +86365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00015784, y: 104.1}
+  m_AnchoredPosition: {x: 0, y: 104.1}
   m_SizeDelta: {x: 261.0219, y: 140.7694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1212634624
@@ -86990,7 +87106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000082031, y: 59.7}
+  m_AnchoredPosition: {x: 0, y: 59.7}
   m_SizeDelta: {x: 156.4413, y: 32.078}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1229967575
@@ -87066,6 +87182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1231088394
 AudioSource:
@@ -87522,6 +87639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1246457449
 AudioSource:
@@ -88202,6 +88320,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1256233367
 AudioSource:
@@ -89069,6 +89188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1260328288
 AudioSource:
@@ -89378,6 +89498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1268891273
 AudioSource:
@@ -90055,7 +90176,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: -33.4}
+  m_AnchoredPosition: {x: 0, y: -33.4}
   m_SizeDelta: {x: 31.1393, y: 30.204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1272912077
@@ -90352,7 +90473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: 17.274}
+  m_AnchoredPosition: {x: 0, y: 17.274}
   m_SizeDelta: {x: 529.23, y: 71.1435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1280874499
@@ -90382,7 +90503,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -92463,6 +92584,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1330156171
 AudioSource:
@@ -92697,6 +92819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1334751701
 AudioSource:
@@ -93821,6 +93944,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1342740006
 AudioSource:
@@ -96061,7 +96185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000082031, y: 59.7}
+  m_AnchoredPosition: {x: 0, y: 59.7}
   m_SizeDelta: {x: 156.4413, y: 32.078}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1374702149
@@ -97258,6 +97382,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1385162414
 AudioSource:
@@ -98314,6 +98439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1399037280
 AudioSource:
@@ -99755,6 +99881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1421218532
 AudioSource:
@@ -99991,6 +100118,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1422511556
 AudioSource:
@@ -100449,6 +100577,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1433264295
 AudioSource:
@@ -100683,6 +100812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1448162023
 AudioSource:
@@ -101143,7 +101273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.710868, y: 106.92001}
+  m_AnchoredPosition: {x: 0, y: 106.92001}
   m_SizeDelta: {x: 261.0219, y: 140.7694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1454364075
@@ -101663,6 +101793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1465806898
 AudioSource:
@@ -102341,6 +102472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1473154469
 AudioSource:
@@ -103208,6 +103340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1481217092
 AudioSource:
@@ -103664,6 +103797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1489127359
 AudioSource:
@@ -104504,6 +104638,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &1491954934
 MonoBehaviour:
@@ -105213,6 +105348,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1510494573
 AudioSource:
@@ -105447,6 +105583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1521787204
 AudioSource:
@@ -106125,6 +106262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1522954130
 AudioSource:
@@ -106961,6 +107099,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1542503111
 AudioSource:
@@ -108751,6 +108890,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 229985864}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1561408894
 AudioSource:
@@ -109429,6 +109569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1566137997
 AudioSource:
@@ -109884,7 +110025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: -8.6327}
+  m_AnchoredPosition: {x: 0, y: -8.6327}
   m_SizeDelta: {x: 683.9023, y: 65.522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569448760
@@ -110632,6 +110773,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1577113470
 AudioSource:
@@ -111090,6 +111232,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1584352517
 AudioSource:
@@ -111353,7 +111496,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -111724,6 +111867,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1588526413
 AudioSource:
@@ -112315,6 +112459,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1606749789
 AudioSource:
@@ -112551,6 +112696,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 518130102}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1607948756
 AudioSource:
@@ -113007,6 +113153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1616252756
 AudioSource:
@@ -113480,6 +113627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &1619339237
 MonoBehaviour:
@@ -113778,6 +113926,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1620587591
 AudioSource:
@@ -114282,6 +114431,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1623373758
 AudioSource:
@@ -114927,6 +115077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1626208555
 AudioSource:
@@ -115383,6 +115534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1629623950
 AudioSource:
@@ -116712,6 +116864,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1654282291
 AudioSource:
@@ -117168,6 +117321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1657478189
 AudioSource:
@@ -118674,6 +118828,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &1673188919
 MonoBehaviour:
@@ -118970,6 +119125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1683499618
 AudioSource:
@@ -119468,6 +119624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1696355053
 AudioSource:
@@ -120434,7 +120591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000082031, y: 59.7}
+  m_AnchoredPosition: {x: 0, y: 59.7}
   m_SizeDelta: {x: 156.4413, y: 32.078}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1707632086
@@ -122161,6 +122318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1759745167
 AudioSource:
@@ -122395,6 +122553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1768808795
 AudioSource:
@@ -122853,6 +123012,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1776512382
 AudioSource:
@@ -123464,8 +123624,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000012875, y: 59.7}
-  m_SizeDelta: {x: 333.3027, y: 71.1435}
+  m_AnchoredPosition: {x: 0, y: 59.7}
+  m_SizeDelta: {x: 369.5354, y: 71.1435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779999389
 MonoBehaviour:
@@ -123494,13 +123654,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Uau um empate!
+  m_Text: Houve um empate!
 --- !u!222 &1779999390
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -123546,6 +123706,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1786575835
 AudioSource:
@@ -124857,6 +125018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1806076200
 AudioSource:
@@ -125093,6 +125255,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1806365861
 AudioSource:
@@ -126248,6 +126411,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 1959187947}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1820567347
 AudioSource:
@@ -126484,6 +126648,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1825832994
 AudioSource:
@@ -127386,6 +127551,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1836697383
 AudioSource:
@@ -127622,6 +127788,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1837930750
 AudioSource:
@@ -128047,6 +128214,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 885030027}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1839860323
 AudioSource:
@@ -128280,7 +128448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: -8.6327}
+  m_AnchoredPosition: {x: 0, y: -8.6327}
   m_SizeDelta: {x: 683.9023, y: 65.522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842173179
@@ -130020,6 +130188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1878024558
 AudioSource:
@@ -130794,6 +130963,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &1891565934
 MonoBehaviour:
@@ -130870,6 +131040,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1891894805
 AudioSource:
@@ -131106,6 +131277,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1895791618
 AudioSource:
@@ -132863,6 +133035,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 1005573476}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1920265753
 AudioSource:
@@ -133097,6 +133270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1930540034
 AudioSource:
@@ -135408,6 +135582,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1959187948
 AudioSource:
@@ -136085,7 +136260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000082031, y: 59.7}
+  m_AnchoredPosition: {x: 0, y: 59.7}
   m_SizeDelta: {x: 156.4413, y: 32.078}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963220121
@@ -136704,6 +136879,7 @@ MonoBehaviour:
   - {fileID: 2116749052}
   - {fileID: 2088443803}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1975700911
 AudioSource:
@@ -137162,6 +137338,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1980142311
 AudioSource:
@@ -138062,6 +138239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &1989277080
 AudioSource:
@@ -139264,6 +139442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2018119283
 AudioSource:
@@ -139498,6 +139677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2022617301
 AudioSource:
@@ -139732,6 +139912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2028676605
 AudioSource:
@@ -140412,6 +140593,7 @@ MonoBehaviour:
   - {fileID: 1683499617}
   - {fileID: 1465806897}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2042627051
 AudioSource:
@@ -140897,7 +141079,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -140947,6 +141129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2048537245
 AudioSource:
@@ -141627,6 +141810,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2058409647
 AudioSource:
@@ -143166,7 +143350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: -8.6327}
+  m_AnchoredPosition: {x: 0, y: -8.6327}
   m_SizeDelta: {x: 683.9023, y: 65.522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2082031154
@@ -143692,6 +143876,7 @@ MonoBehaviour:
   - {fileID: 109332457}
   - {fileID: 854677207}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2088443804
 AudioSource:
@@ -144372,6 +144557,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2097435728
 AudioSource:
@@ -145558,6 +145744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2108813532
 AudioSource:
@@ -146016,6 +146203,7 @@ MonoBehaviour:
   - {fileID: 1521787203}
   - {fileID: 1657478188}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2116749053
 AudioSource:
@@ -146252,6 +146440,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2120550349
 AudioSource:
@@ -146930,6 +147119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2129828649
 AudioSource:
@@ -147832,6 +148022,7 @@ MonoBehaviour:
   - {fileID: 1170018286}
   - {fileID: 379550900}
   puzzleVerification: {fileID: 0}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!82 &2140113305
 AudioSource:
