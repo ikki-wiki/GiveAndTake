@@ -12,6 +12,7 @@ public class TimeManager : MonoBehaviour
     public GameObject displayTime;
     public GameObject PopUpLose;
     public GameObject ScreenTechinic;
+    public GameObject PopUpTechinic;
     private Coroutine timerCoroutine;
     public string sceneToLoad;
     public float defaultTime = 180f;
@@ -96,6 +97,7 @@ public class TimeManager : MonoBehaviour
             timer -= 1f;
         }
         ScreenTechinic.SetActive(false);
+        PopUpTechinic.SetActive(true);
         PopUpLose.SetActive(true);
     }
 

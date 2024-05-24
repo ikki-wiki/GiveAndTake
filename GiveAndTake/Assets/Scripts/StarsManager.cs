@@ -11,6 +11,7 @@ public class StarsManager : MonoBehaviour
     public GameObject star2;
     public GameObject star3;
     public Text timeText;
+    public Text pointsText;
     private bool timeTextIsActive = false;
     private float initialTime;
     private float time3Stars;
@@ -27,7 +28,15 @@ public class StarsManager : MonoBehaviour
                 time2Stars = initialTime * 0.5f;  // metade do tempo inicial
                 timeTextIsActive = true;
             }
-            CheckStars();
+            
+            if(pointsText.IsActive())
+            {  
+                CheckStars();
+            }
+            else
+            {
+                disableStars();
+            }
         }
         else
         {
@@ -35,7 +44,6 @@ public class StarsManager : MonoBehaviour
             {
                 timeTextIsActive = false;
             }
-            disableStars();
         }
     }
 
