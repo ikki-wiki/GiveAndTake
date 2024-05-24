@@ -9,8 +9,10 @@ public class ItemSlot : MonoBehaviour, IDropHandler
 {
     public List<ItemSlot> childSlots = new List<ItemSlot>();
     public PuzzleVerification puzzleVerification; // Reference to PuzzleVerification
+    public TrianglePuzzleVerify trianglePuzzleVerifier; // Reference to the TrianglePuzzleVerify
     AudioSource audioSource;
     public float slotValue;
+
 
     private void Awake()
     {
@@ -31,9 +33,11 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 0, 0);
 
             // Notify the puzzle verification
-            if(SceneManager.GetActiveScene().name == "MiniGame1" || SceneManager.GetActiveScene().name == "2PlayerMinigame"){
-                Debug.Log("Checking all slots filled");
+            if(SceneManager.GetActiveScene().name == "MiniGame1"){
                 puzzleVerification.CheckAllSlotsFilled(); // New method to check if all slots are filled
+            }
+            if(SceneManager.GetActiveScene().name == "MiniGame2"){
+                trianglePuzzleVerifier.CheckAllSlotsFilled(); // New method to check if all slots are filled
             }
                 
         }
