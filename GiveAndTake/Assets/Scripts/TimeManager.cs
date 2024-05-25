@@ -19,7 +19,6 @@ public class TimeManager : MonoBehaviour
     public GameObject darkerBackground;
     public float defaultTime = 180f;
     private float timer;
-    public bool shouldSceneLoad;
     public float RemainingTime
     {
         get
@@ -100,16 +99,16 @@ public class TimeManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             timer -= 1f;
         }
-        ScreenTechinic.SetActive(false);
-        PopUpTechinic.SetActive(true);
-        darkerBackground.SetActive(true);
-        PopUpLose.SetActive(true);
-        PopUpLose.GetComponent<AudioSource>().Play();
-
-        // Timer has reached zero
-        if (shouldSceneLoad){
-            SceneManager.LoadScene(sceneToLoad);
+        string sceneName = SceneManager.GetActiveScene().name;
+        if (sceneName != "2PlayerMinigame"){
+            ScreenTechinic.SetActive(false);
+            PopUpTechinic.SetActive(true);
+            darkerBackground.SetActive(true);
+            PopUpLose.SetActive(true);
+            PopUpLose.GetComponent<AudioSource>().Play();
         }
+        
+
     }
 
     // Method called when the value of the time input field changes
