@@ -8,8 +8,9 @@ public class DisplayFinalScore : MonoBehaviour
     private void Start()
     {
         bool isScoreEnabled = PlayerPrefs.GetInt("ScoreEnabled", 1) == 1;
-        if(isScoreEnabled){
-            finalScoreText.text = (int) PlayerProfile.currentProfile.score + " pontos!";
+        bool isTimeEnabled = PlayerPrefs.GetInt("TimeEnabled", 1) == 1;
+        if(isScoreEnabled && isTimeEnabled){
+            finalScoreText.text = "Fizeste " + (int) PlayerProfile.currentProfile.score + " pontos!";
         } else {
             finalScoreText.text = "Completaste o nível!";
         }

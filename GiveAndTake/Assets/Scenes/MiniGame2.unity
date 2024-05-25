@@ -14130,10 +14130,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToggle: {fileID: 398181435}
   timeInputField: {fileID: 586810522}
-  timeText: {fileID: 1392701589}
+  timeTextList:
+  - {fileID: 1392701589}
   displayTime: {fileID: 369589938}
   sceneToLoad: Levels
   defaultTime: 180
+  shouldSceneLoad: 1
 --- !u!4 &1792654309
 Transform:
   m_ObjectHideFlags: 0
