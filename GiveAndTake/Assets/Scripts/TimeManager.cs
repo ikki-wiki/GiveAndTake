@@ -15,6 +15,7 @@ public class TimeManager : MonoBehaviour
     public GameObject PopUpTechinic;
     private Coroutine timerCoroutine;
     public string sceneToLoad;
+    public GameObject darkerBackground;
     public float defaultTime = 180f;
     private float timer;
     public float RemainingTime
@@ -98,7 +99,10 @@ public class TimeManager : MonoBehaviour
         }
         ScreenTechinic.SetActive(false);
         PopUpTechinic.SetActive(true);
+        darkerBackground.SetActive(true);
         PopUpLose.SetActive(true);
+        PopUpLose.GetComponent<AudioSource>().Play();
+
     }
 
     // Method called when the value of the time input field changes
