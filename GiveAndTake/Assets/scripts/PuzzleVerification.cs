@@ -26,11 +26,6 @@ public class PuzzleVerification : MonoBehaviour
     public GameObject Show2Stars;
     public GameObject Show1Star;
 
-    private void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
-
     // Method to check if all slots are filled
     public void CheckAllSlotsFilled()
     {

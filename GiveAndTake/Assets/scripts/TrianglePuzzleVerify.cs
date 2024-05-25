@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 
@@ -14,16 +15,23 @@ public class TrianglePuzzleVerify : MonoBehaviour
     public ItemSlot slotRed1;
     public ItemSlot slotRed2;
     public ItemSlot slotRed3;
-
-    AudioSource audioSource;
-
+    public AudioSource audioSource;
+    public AudioSource CompletedLevel;
     public shake shake;
     public ScoreManager scoreManager;
-
-    private void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+    public GameObject PopUpStars;
+    public GameObject PopUpNoStar;
+    public Text PointsEarned;
+    public GameObject PopUpTechinic;
+    public GameObject Star;
+    public GameObject Star2;
+    public GameObject Star3;
+    public Text timeText;
+    public Text pointsText;
+    public GameObject darkerBackground;
+    public GameObject Show3Stars;
+    public GameObject Show2Stars;
+    public GameObject Show1Star;
 
     private void Start()
     {
@@ -63,8 +71,46 @@ public class TrianglePuzzleVerify : MonoBehaviour
         {
             // Puzzle solved
             Debug.Log("Puzzle solved!");
-            SceneManager.LoadSceneAsync(8);
-            // You can add more feedback here if needed
+            if(timeText.IsActive() && pointsText.IsActive())
+            {
+                Debug.Log(scoreManager.GetScore()+" Scored");
+                //se a star3 tiver ativa, ativa o popup3stars, se a star2 tiver ativa, ativa o popup2stars, se a star tiver ativa, ativa o popup1star
+                if (Star3.activeSelf)
+                {            
+                    //buscar o PointsEarned e colocar o valor do scoreManager.GetScore() nele, junto com uma frase
+                    PointsEarned.text = "Conseguiste ganhar um total de " + scoreManager.GetScore() + " pontos!";
+                    darkerBackground.SetActive(true);
+                    PopUpStars.SetActive(true);
+                    PopUpTechinic.SetActive(true);
+                    Show3Stars.SetActive(true);
+                    Time.timeScale = 0;
+                }
+                else if (Star2.activeSelf)
+                {
+                    PointsEarned.text = "Conseguiste ganhar um total de " + scoreManager.GetScore() + " pontos!";
+                    darkerBackground.SetActive(true);
+                    PopUpStars.SetActive(true);
+                    PopUpTechinic.SetActive(true);
+                    Show2Stars.SetActive(true);
+                    Time.timeScale = 0;
+                }
+                else if (Star.activeSelf)
+                {
+                    PointsEarned.text = "Conseguiste ganhar um total de " + scoreManager.GetScore() + " pontos!";
+                    darkerBackground.SetActive(true);
+                    PopUpStars.SetActive(true);
+                    PopUpTechinic.SetActive(true);
+                    Show1Star.SetActive(true);
+                    Time.timeScale = 0;
+                }
+            }
+            else
+            {
+                darkerBackground.SetActive(true);
+                PopUpNoStar.SetActive(true);
+                PopUpTechinic.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
         else
         {
@@ -90,6 +136,7 @@ public class TrianglePuzzleVerify : MonoBehaviour
             if (sideValue3 == sideValue)
             {
                 PlayerProfile.currentProfile.score += scoreManager.GetScore();
+                CompletedLevel.Play();
                 return true;
             }
             else
