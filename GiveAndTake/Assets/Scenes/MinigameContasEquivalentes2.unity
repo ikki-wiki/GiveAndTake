@@ -3187,7 +3187,6 @@ MonoBehaviour:
   RestartButton: {fileID: 373596358}
   QuitButton: {fileID: 1850196963}
   CloseButton: {fileID: 388973681}
-  MinigameCanvas: {fileID: 1243517781}
   PauseCanvas: {fileID: 565941005}
 --- !u!1 &415481043
 GameObject:
@@ -6212,7 +6211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToggle: {fileID: 216342673}
   timeInputField: {fileID: 1334467145}
-  timeText: {fileID: 929981446}
+  timeTextList:
+  - {fileID: 929981446}
   displayTime: {fileID: 1239310986}
   PopUpLose: {fileID: 75856645}
   ScreenTechinic: {fileID: 577349167}
@@ -6220,6 +6220,7 @@ MonoBehaviour:
   sceneToLoad: Levels
   darkerBackground: {fileID: 2080057463}
   defaultTime: 180
+  shouldSceneLoad: 1
 --- !u!4 &792612773
 Transform:
   m_ObjectHideFlags: 0

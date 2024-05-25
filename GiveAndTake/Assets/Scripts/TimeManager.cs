@@ -107,8 +107,9 @@ public class TimeManager : MonoBehaviour
         PopUpLose.GetComponent<AudioSource>().Play();
 
         // Timer has reached zero
-        if (shouldSceneLoad)
+        if (shouldSceneLoad){
             SceneManager.LoadScene(sceneToLoad);
+        }
     }
 
     // Method called when the value of the time input field changes

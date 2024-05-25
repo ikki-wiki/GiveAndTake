@@ -35,7 +35,7 @@ public class ClickEquationOption : MonoBehaviour
             {
                 Debug.Log(scoreManager.GetScore()+" Scored");
                 //corrigir depois quando já se tiver o tal display de sucesso/erro
-                //PlayerProfile.currentProfile.score += scoreManager.GetScore();
+                PlayerProfile.currentProfile.score += scoreManager.GetScore();
                 //se a star3 tiver ativa, ativa o popup3stars, se a star2 tiver ativa, ativa o popup2stars, se a star tiver ativa, ativa o popup1star
                 if (Star3.activeSelf)
                 {            

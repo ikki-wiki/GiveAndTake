@@ -5515,7 +5515,6 @@ MonoBehaviour:
   RestartButton: {fileID: 502894578}
   QuitButton: {fileID: 1784389189}
   CloseButton: {fileID: 1128709030}
-  MinigameCanvas: {fileID: 1490722893}
   PauseCanvas: {fileID: 1099440595}
 --- !u!1 &975916540
 GameObject:
