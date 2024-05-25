@@ -44,6 +44,7 @@ public class StarsManager : MonoBehaviour
             {
                 timeTextIsActive = false;
             }
+            disableStars();
         }
     }
 

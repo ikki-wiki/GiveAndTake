@@ -11,8 +11,6 @@ public class PauseManager : MonoBehaviour
     public Button RestartButton;
     public Button QuitButton;
     public Button CloseButton;
-
-    public GameObject MinigameCanvas;
     public GameObject PauseCanvas;
 
     void Start()
@@ -39,14 +37,12 @@ public class PauseManager : MonoBehaviour
         {
             if (Time.timeScale == 0)
             {
-                MinigameCanvas.SetActive(true);
                 PauseMenu.SetActive(false);
                 PauseCanvas.SetActive(false);
                 Time.timeScale = 1;
             }
             else
             {
-                MinigameCanvas.SetActive(false);
                 PauseMenu.SetActive(true);
                 PauseCanvas.SetActive(true);
                 Time.timeScale = 0;
@@ -56,7 +52,6 @@ public class PauseManager : MonoBehaviour
 
     public void ResumeGame()
     {
-        MinigameCanvas.SetActive(true);
         PauseMenu.SetActive(false);
         PauseCanvas.SetActive(false);
         Time.timeScale = 1;
