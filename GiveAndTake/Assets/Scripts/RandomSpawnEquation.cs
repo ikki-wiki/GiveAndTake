@@ -22,8 +22,7 @@ public class RandomSpawnEquation : MonoBehaviour
             GameObject randomPrefab = prefabs[randomIndex];
             GameObject spawnPoint = spawnPoints[i];
             GameObject newPrefab = Instantiate(randomPrefab, spawnPoint.transform.position, Quaternion.identity);
-            newPrefab.GetComponent<SpriteRenderer>().sortingOrder = 1;
-            newPrefab.transform.localScale = new Vector3(55, 55, 1);
+            newPrefab.transform.localScale = new Vector3(4, 1, 1);
             newPrefab.SetActive(true);
             newPrefab.transform.SetParent(spawnPoint.transform);
             List<GameObject> temp = new List<GameObject>(prefabs);

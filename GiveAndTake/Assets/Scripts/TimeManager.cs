@@ -11,8 +11,12 @@ public class TimeManager : MonoBehaviour
     public TMP_InputField timeInputField;
     public List<Text> timeTextList;
     public GameObject displayTime;
+    public GameObject PopUpLose;
+    public GameObject ScreenTechinic;
+    public GameObject PopUpTechinic;
     private Coroutine timerCoroutine;
     public string sceneToLoad;
+    public GameObject darkerBackground;
     public float defaultTime = 180f;
     private float timer;
     public bool shouldSceneLoad;
@@ -96,10 +100,16 @@ public class TimeManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             timer -= 1f;
         }
+        ScreenTechinic.SetActive(false);
+        PopUpTechinic.SetActive(true);
+        darkerBackground.SetActive(true);
+        PopUpLose.SetActive(true);
+        PopUpLose.GetComponent<AudioSource>().Play();
 
         // Timer has reached zero
-        if (shouldSceneLoad)
+        if (shouldSceneLoad){
             SceneManager.LoadScene(sceneToLoad);
+        }
     }
 
     // Method called when the value of the time input field changes
