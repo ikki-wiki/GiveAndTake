@@ -3784,10 +3784,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToggle: {fileID: 1594231231}
   timeInputField: {fileID: 670184176}
-  timeText: {fileID: 1378105697}
+  timeTextList:
+  - {fileID: 1378105697}
   displayTime: {fileID: 1937574201}
   sceneToLoad: Levels
   defaultTime: 180
+  shouldSceneLoad: 1
 --- !u!4 &792612773
 Transform:
   m_ObjectHideFlags: 0

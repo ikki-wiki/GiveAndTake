@@ -661,6 +661,7 @@ MonoBehaviour:
   - {fileID: 750536127}
   - {fileID: 347887062}
   puzzleVerification: {fileID: 1790847655}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &39308519
 MonoBehaviour:
@@ -1542,6 +1543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 1790847655}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &90474949
 MonoBehaviour:
@@ -2268,6 +2270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 1790847655}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &147006233
 MonoBehaviour:
@@ -3565,6 +3568,7 @@ MonoBehaviour:
   - {fileID: 147006232}
   - {fileID: 901242939}
   puzzleVerification: {fileID: 1790847655}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &347887063
 MonoBehaviour:
@@ -5418,6 +5422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 1790847655}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &504654783
 MonoBehaviour:
@@ -6118,6 +6123,7 @@ MonoBehaviour:
   - {fileID: 504654782}
   - {fileID: 90474948}
   puzzleVerification: {fileID: 1790847655}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &750536128
 MonoBehaviour:
@@ -6831,6 +6837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childSlots: []
   puzzleVerification: {fileID: 1790847655}
+  trianglePuzzleVerifier: {fileID: 0}
   slotValue: 0
 --- !u!114 &901242940
 MonoBehaviour:
@@ -13615,10 +13622,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToggle: {fileID: 1929361687}
   timeInputField: {fileID: 1012570145}
-  timeText: {fileID: 2015607806}
+  timeTextList:
+  - {fileID: 2015607806}
   displayTime: {fileID: 1653628223}
   sceneToLoad: Levels
   defaultTime: 180
+  shouldSceneLoad: 1
 --- !u!4 &1754389324
 Transform:
   m_ObjectHideFlags: 0

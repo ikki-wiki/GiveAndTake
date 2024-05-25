@@ -22,9 +22,6 @@ public class ScoreManager2Game : MonoBehaviour
     public GameObject popUpLose2;
     public GameObject popUpDraw1;
     public GameObject popUpDraw2;
-    int time = 120;
-    public Text Timer1;
-    public Text Timer2;
     public List<Cartao> cardsPlayer1Direita;
     public List<Cartao> cardsPlayer1Esquerda;
     public List<Cartao> cardsPlayer2Direita;
@@ -33,9 +30,17 @@ public class ScoreManager2Game : MonoBehaviour
     public AudioSource audioSource;
     public GameObject popUpTecnico;
     public GameObject bacgroundTecnico;
+    public GameObject configurationsMenu;
+    public TimeManager timeManager;
 
+    public void Awake()
+    {
+        SetTimeEnabled();
+    }
     private void Start()
     {
+        SetTimeEnabled();
+
         showCards1Direita();
 
         showCards1Esquerda();
@@ -44,9 +49,16 @@ public class ScoreManager2Game : MonoBehaviour
 
         showCards2Esquerda();
 
-        InvokeRepeating("UpdateTimer", 1f, 1f);
+        configurationsMenu.SetActive(true);
+        bacgroundTecnico.SetActive(false);
+        popUpTecnico.SetActive(false);
 
         audioSource = GetComponent<AudioSource>();
+    }
+
+    public void Update()
+    {
+        UpdateScore();
     }
 
     public void showCards1Direita()
@@ -107,20 +119,11 @@ public class ScoreManager2Game : MonoBehaviour
 
     }
 
-    private void UpdateTimer()
+    private void UpdateScore()
     {
-        // Decrementa o tempo restante.
-        time--;
 
-        int minutes = Mathf.FloorToInt(time / 60);
-        int seconds = Mathf.FloorToInt(time % 60);
+        float time = timeManager.RemainingTime;
         
-        // Atualiza os textos dos temporizadores.             
-        Timer1.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-        Timer2.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-        //Timer1.text = time.ToString() + " segundos";
-        //Timer2.text = time.ToString() + " segundos";
-
         // Se o tempo acabou, voc� pode adicionar aqui a l�gica para terminar o jogo.
         if (time <= 0)
         {
@@ -212,11 +215,10 @@ public class ScoreManager2Game : MonoBehaviour
                 popUpDraw1.gameObject.SetActive(true);
                 popUpDraw2.gameObject.SetActive(true);
             }
-
+            
+            configurationsMenu.SetActive(false);
             bacgroundTecnico.SetActive(true);
             popUpTecnico.SetActive(true);
-
-
         }
     }
 
@@ -250,5 +252,10 @@ public class ScoreManager2Game : MonoBehaviour
             scoreTextPlayer2.text = scorePlayer2.ToString() + " pontos";
         }
 
+    }
+
+    public void SetTimeEnabled(){
+        PlayerPrefs.SetInt("TimeEnabled", 1);
+        PlayerPrefs.Save();
     }
 }
