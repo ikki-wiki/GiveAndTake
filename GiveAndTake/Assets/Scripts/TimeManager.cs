@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,12 +9,13 @@ public class TimeManager : MonoBehaviour
 {
     public Toggle timeToggle;
     public TMP_InputField timeInputField;
-    public Text timeText;
+    public List<Text> timeTextList;
     public GameObject displayTime;
     private Coroutine timerCoroutine;
     public string sceneToLoad;
     public float defaultTime = 180f;
     private float timer;
+    public bool shouldSceneLoad;
     public float RemainingTime
     {
         get
@@ -88,14 +90,16 @@ public class TimeManager : MonoBehaviour
             int seconds = Mathf.FloorToInt(timer % 60);
 
             // Update the timer text with the formatted time
-            timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            foreach (Text timeText in timeTextList)
+                timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
             yield return new WaitForSeconds(1f);
             timer -= 1f;
         }
 
         // Timer has reached zero
-        SceneManager.LoadScene(sceneToLoad);
+        if (shouldSceneLoad)
+            SceneManager.LoadScene(sceneToLoad);
     }
 
     // Method called when the value of the time input field changes
