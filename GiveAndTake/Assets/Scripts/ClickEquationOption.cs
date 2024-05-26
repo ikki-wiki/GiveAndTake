@@ -40,7 +40,7 @@ public class ClickEquationOption : MonoBehaviour
                 if (Star3.activeSelf)
                 {            
                     //buscar o PointsEarned e colocar o valor do scoreManager.GetScore() nele, junto com uma frase
-                    PointsEarned.text = "Conseguiste ganhar um total de " + scoreManager.GetScore() + " pontos!";
+                    PointsEarned.text = "Conseguiste ganhar um total de " + (int) scoreManager.GetScore() + " pontos!";
                     darkerBackground.SetActive(true);
                     PopUpStars.SetActive(true);
                     PopUpTechinic.SetActive(true);
@@ -49,7 +49,7 @@ public class ClickEquationOption : MonoBehaviour
                 }
                 else if (Star2.activeSelf)
                 {
-                    PointsEarned.text = "Conseguiste ganhar um total de " + scoreManager.GetScore() + " pontos!";
+                    PointsEarned.text = "Conseguiste ganhar um total de " + (int) scoreManager.GetScore() + " pontos!";
                     darkerBackground.SetActive(true);
                     PopUpStars.SetActive(true);
                     PopUpTechinic.SetActive(true);
@@ -58,7 +58,7 @@ public class ClickEquationOption : MonoBehaviour
                 }
                 else if (Star.activeSelf)
                 {
-                    PointsEarned.text = "Conseguiste ganhar um total de " + scoreManager.GetScore() + " pontos!";
+                    PointsEarned.text = "Conseguiste ganhar um total de " + (int) scoreManager.GetScore() + " pontos!";
                     darkerBackground.SetActive(true);
                     PopUpStars.SetActive(true);
                     PopUpTechinic.SetActive(true);

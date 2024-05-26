@@ -10,7 +10,7 @@ public class DisplayFinalScore : MonoBehaviour
         bool isScoreEnabled = PlayerPrefs.GetInt("ScoreEnabled", 1) == 1;
         bool isTimeEnabled = PlayerPrefs.GetInt("TimeEnabled", 1) == 1;
         if(isScoreEnabled && isTimeEnabled){
-            finalScoreText.text = "Fizeste " + (int) PlayerProfile.currentProfile.score + " pontos!";
+            finalScoreText.text = "Fizeste um total de " + (int) PlayerProfile.currentProfile.score + " pontos neste nível!";
         } else {
             finalScoreText.text = "Completaste o nível!";
         }
